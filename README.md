@@ -11,7 +11,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 2](DailyCodingProblem/2_Uber_arrays_question.py)
 - [Daily Coding problem # 3](DailyCodingProblem/3_Google_Serialize_BST.py)
 - [Daily Coding problem # 4](DailyCodingProblem/4_Stripe_smallest_positive_number.py)
--[Daily Coding problem # 5](DailyCodingProblem/5_JaneStreet_functional_programming.py)
+- [Daily Coding problem # 5](DailyCodingProblem/5_JaneStreet_functional_programming.py)
 
 
 ## HackerRank
