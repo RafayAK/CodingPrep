@@ -13,6 +13,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 4](DailyCodingProblem/4_Stripe_smallest_positive_number.py)
 - [Daily Coding problem # 5](DailyCodingProblem/5_JaneStreet_functional_programming.py)
 - [Daily Coding problem # 6](DailyCodingProblem/6_Google_XOR_linked_list.py)
+- [Daily Coding problem # 7](DailyCodingProblem/7_Facebook_Decoding_porblem.py)
 
 
 ## HackerRank
@@ -22,3 +23,4 @@ Pull requests welcome, if you want to improve my implementation
 - [Minimum Swaps 2](Arrays_MinSwaps.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/minimum-swaps-2/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays)*
 - [Counting Valleys](Counting_Valleys.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/counting-valleys/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup)*
 - [Abbreviation](Dynamic_Abbreviavtion.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/abbr/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming)*
+- [Decibinary Numbers](Dynamic_Decibinary.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/decibinary-numbers?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming)*
