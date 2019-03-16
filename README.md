@@ -14,6 +14,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 5](DailyCodingProblem/5_JaneStreet_functional_programming.py)
 - [Daily Coding problem # 6](DailyCodingProblem/6_Google_XOR_linked_list.py)
 - [Daily Coding problem # 7](DailyCodingProblem/7_Facebook_Decoding_porblem.py)
+- [Daily Coding problem # 8](DailyCodingProblem/8_Google_Unival_trees.py)
 
 
 ## HackerRank
