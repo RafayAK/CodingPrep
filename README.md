@@ -7,7 +7,7 @@ Pull requests welcome, if you want to improve my implementation
 **All files have their question, copied verbatim, at the top of the file.**
 
 ## Daily Coding problems
--  [Daily Coding problem # 1](DailyCodingProblem/1_Google_Two_Sum.py)
+- [Daily Coding problem # 1](DailyCodingProblem/1_Google_Two_Sum.py)
 - [Daily Coding problem # 2](DailyCodingProblem/2_Uber_arrays_question.py)
 - [Daily Coding problem # 3](DailyCodingProblem/3_Google_Serialize_BST.py)
 - [Daily Coding problem # 4](DailyCodingProblem/4_Stripe_smallest_positive_number.py)
@@ -15,7 +15,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 6](DailyCodingProblem/6_Google_XOR_linked_list.py)
 - [Daily Coding problem # 7](DailyCodingProblem/7_Facebook_Decoding_porblem.py)
 - [Daily Coding problem # 8](DailyCodingProblem/8_Google_Unival_trees.py)
-
+- [Daily Coding problem # 9](DailyCodingProblem/9_Airbnb_NonAdjacent_Sum.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
@@ -26,3 +26,4 @@ Pull requests welcome, if you want to improve my implementation
 - [Abbreviation](Dynamic_Abbreviavtion.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/abbr/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming)*
 - [Decibinary Numbers](Dynamic_Decibinary.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/decibinary-numbers?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming)*
 - [Max Array Sum](DynamicProg_MaxArraySum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/max-array-sum/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming)*
+- [Luck Balance](Greedy_Luck_Balance.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/luck-balance/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms)
