@@ -16,6 +16,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 7](DailyCodingProblem/7_Facebook_Decoding_porblem.py)
 - [Daily Coding problem # 8](DailyCodingProblem/8_Google_Unival_trees.py)
 - [Daily Coding problem # 9](DailyCodingProblem/9_Airbnb_NonAdjacent_Sum.py)
+- [Daily Coding problem # 10](DailyCodingProblem/10_Apple_Job_Scheduler.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
@@ -27,3 +28,4 @@ Pull requests welcome, if you want to improve my implementation
 - [Decibinary Numbers](Dynamic_Decibinary.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/decibinary-numbers?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming)*
 - [Max Array Sum](DynamicProg_MaxArraySum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/max-array-sum/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming)*
 - [Luck Balance](Greedy_Luck_Balance.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/luck-balance/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms)
+- [Minimum Absolute Difference in an Array](Greedy_Minimum_Absolute_Difference_n_Array.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms)*
