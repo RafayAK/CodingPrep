@@ -19,6 +19,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 10](DailyCodingProblem/10_Apple_Job_Scheduler.py)
 - [Daily Coding problem # 11](DailyCodingProblem/11_Twitter_AutoComplete.py)
 - [Daily Coding problem # 12](DailyCodingProblem/12_Amazon_Staircase_problem.py)
+- [Daily Coding problem # 13](DailyCodingProblem/13_Amazon_LongestDistinctSubstring.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
@@ -33,4 +34,4 @@ Pull requests welcome, if you want to improve my implementation
 - [Minimum Absolute Difference in an Array](Greedy_Minimum_Absolute_Difference_n_Array.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=greedy-algorithms)*
 - [Dictionaries and Hashmaps](Hash_Tables_Ransom_Note.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-ransom-note/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps)*
 - [Hash Tables: Ice Cream Parlor](HashTables_IceCream_Parlor.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=search)*
-
+- [Jumping on the Clouds](Jumping_on_the_Clouds.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem)*
