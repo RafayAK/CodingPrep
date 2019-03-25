@@ -42,7 +42,6 @@ def count_ways(s):
         return memo_dict[s]
 
     if str_len == 0:
-        print(str)
         return 1
 
     if s[0] == '0':
@@ -78,5 +77,5 @@ def coding_problem_7(s):
 if __name__ == '__main__':
     s =input()
     print("\n")
-    # print(count_ways(s))
+    print(count_ways(s))
     print(coding_problem_7(s))
