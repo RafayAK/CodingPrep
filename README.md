@@ -22,6 +22,8 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 13](DailyCodingProblem/13_Amazon_LongestDistinctSubstring.py)
 - [Daily Coding problem # 14](DailyCodingProblem/14_Google_MonteCarlor_pi_Estimate.py)
 - [Daily Coding problem # 15](DailyCodingProblem/15_UniformSampling_from_stream.py)
+- [Daily Coding problem # 16](DailyCodingProblem/16_Twitter_log_orders.py)
+
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
@@ -38,6 +40,8 @@ Pull requests welcome, if you want to improve my implementation
 - [Hash Tables: Ice Cream Parlor](HashTables_IceCream_Parlor.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=search)*
 - [Jumping on the Clouds](Jumping_on_the_Clouds.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem)*
 - [Recursion: Fibonacci Numbers](Fibonacci.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-fibonacci-numbers/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=recursion-backtracking)*
+- [New Year Chaos](NewYearChaos.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/new-year-chaos/problem)*
+
 
 
 ## LeetCode
