@@ -26,6 +26,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 17](DailyCodingProblem/17_Google_Longest_Absolute_Path.py)
 - [Daily Coding problem # 18](DailyCodingProblem/18_Google_Max_of_Subarray.py)
 - [Daily Coding problem # 19](DailyCodingProblem/19_Facebook_Builders_Min_Cost.py)
+- [Daily Coding problem # 20](DailyCodingProblem/20_Intersecting_point_of_two_linkend_lists.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
@@ -44,9 +45,9 @@ Pull requests welcome, if you want to improve my implementation
 - [Recursion: Fibonacci Numbers](Fibonacci.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-fibonacci-numbers/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=recursion-backtracking)*
 - [New Year Chaos](NewYearChaos.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/new-year-chaos/problem)*
 - [Recursion: Davis' Staircase](Recursion_Davis_Staircase.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-recursive-staircase/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=recursion-backtracking)*
-- [Repeated String](Repeated_String.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/repeated-string/problem?h_r=internal-search)
-- [Sock Merchant](Sock_Merchant.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/sock-merchant/problem)
-
+- [Repeated String](Repeated_String.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/repeated-string/problem?h_r=internal-search)*
+- [Sock Merchant](Sock_Merchant.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/sock-merchant/problem)*
+- [Sorting: Bubble Sort](Sorting_Bubble_Sort.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-bubble-sort/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting)*
 
 ## LeetCode
 [Largest Numbers](largest_number.py) - *Full question can be found [here](https://leetcode.com/problems/largest-number/)*
