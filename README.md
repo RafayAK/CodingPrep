@@ -51,7 +51,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Sock Merchant](Sock_Merchant.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/sock-merchant/problem)*
 - [Sorting: Bubble Sort](Sorting_Bubble_Sort.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-bubble-sort/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting)*
 - [Mark and Toys](Sorting_Mark_and_toys.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/mark-and-toys/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting)*
-- [Balanced Brackets](Stacks_n_Queues_Balanced_brackets.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/balanced-brackets/problem*
+- [Balanced Brackets](Stacks_n_Queues_Balanced_brackets.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/balanced-brackets/problem)*
 
 ## LeetCode
-[Largest Numbers](largest_number.py) - *Full question can be found [here](https://leetcode.com/problems/largest-number/)*
+[Largest Numbers](largest_number.py) - *Full question can be found [here](https://leetcode.com/problems/largest-number)*
