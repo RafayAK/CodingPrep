@@ -30,6 +30,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 21](DailyCodingProblem/21_Snapchat_Number_of_Classrrooms.py)
 - [Daily Coding problem # 22](DailyCodingProblem/22_MS_Sentence_from_Dict.py)
 - [Daily Coding problem # 23](DailyCodingProblem/23_Google_Find_Min_Path.py)
+- [Daily Coding problem # 24](DailyCodingProblem/24_Locking_Binary_tree.py)
 
 
 ## HackerRank
@@ -55,6 +56,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Mark and Toys](Sorting_Mark_and_toys.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/mark-and-toys/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting)*
 - [Balanced Brackets](Stacks_n_Queues_Balanced_brackets.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/balanced-brackets/problem)*
 - [Alternating Characters](Strings_Alternating_Characters.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/alternating-characters/problem)*
+- [Alternating Characters](Strings_Alternating_Characters.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-is-binary-search-tree/problem)*
 
 ## LeetCode
 [Largest Numbers](largest_number.py) - *Full question can be found [here](https://leetcode.com/problems/largest-number)*
