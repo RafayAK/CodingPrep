@@ -29,6 +29,8 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 20](DailyCodingProblem/20_Intersecting_point_of_two_linkend_lists.py)
 - [Daily Coding problem # 21](DailyCodingProblem/21_Snapchat_Number_of_Classrrooms.py)
 - [Daily Coding problem # 22](DailyCodingProblem/22_MS_Sentence_from_Dict.py)
+- [Daily Coding problem # 23](DailyCodingProblem/23_Google_Find_Min_Path.py)
+
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
@@ -52,6 +54,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Sorting: Bubble Sort](Sorting_Bubble_Sort.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-bubble-sort/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting)*
 - [Mark and Toys](Sorting_Mark_and_toys.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/mark-and-toys/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting)*
 - [Balanced Brackets](Stacks_n_Queues_Balanced_brackets.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/balanced-brackets/problem)*
+- [Alternating Characters](Strings_Alternating_Characters.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/alternating-characters/problem)*
 
 ## LeetCode
 [Largest Numbers](largest_number.py) - *Full question can be found [here](https://leetcode.com/problems/largest-number)*
