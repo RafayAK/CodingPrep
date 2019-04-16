@@ -31,7 +31,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 22](DailyCodingProblem/22_MS_Sentence_from_Dict.py)
 - [Daily Coding problem # 23](DailyCodingProblem/23_Google_Find_Min_Path.py)
 - [Daily Coding problem # 24](DailyCodingProblem/24_Locking_Binary_tree.py)
-- [Daily Coding problem # 24](DailyCodingProblem/25_Facebook_regular_expression.py)
+- [Daily Coding problem # 25](DailyCodingProblem/25_Facebook_regular_expression.py)
 
 
 ## HackerRank
