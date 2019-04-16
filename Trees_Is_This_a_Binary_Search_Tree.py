@@ -7,10 +7,10 @@ class node:
 """
 
 class node:
-    def __init__(self, data):
+    def __init__(self, data, left=None, right=None):
         self.data = data
-        self.left = None
-        self.right= None
+        self.left = left
+        self.right= right
 
     def create_my_tree(self): # ANS False
         self.data = 4
@@ -80,14 +80,19 @@ def checkBST(root):
 
 
 if __name__ == '__main__':
-    root = node(2)
-    root.insert(1)
-    root.insert(3)
-    root.insert(2)
+    # root = node(2)
+    # root.insert(1)
+    # root.insert(3)
+    # root.insert(2)
+    #
+    # #root = node(4)
+    # #root.create_my_tree()
+    # root.print_inorder()
+    #
+    #
+    # print(checkBST(root))
+    tree = node(5,
+                left=node(2, left=node(1), right=node(4, left=node(3))),
+                right=node(6, right=node(9, right=node(12, left=node(11))))) # ans 11
 
-    #root = node(4)
-    #root.create_my_tree()
-    root.print_inorder()
-
-
-    print(checkBST(root))
+    print(checkBST(tree))
