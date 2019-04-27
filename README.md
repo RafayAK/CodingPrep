@@ -32,6 +32,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 23](DailyCodingProblem/23_Google_Find_Min_Path.py)
 - [Daily Coding problem # 24](DailyCodingProblem/24_Locking_Binary_tree.py)
 - [Daily Coding problem # 25](DailyCodingProblem/25_Facebook_regular_expression.py)
+- [Daily Coding problem # 26](DailyCodingProblem/26_Google_Remove_from_LinkedList.py)
 
 
 ## HackerRank
@@ -59,6 +60,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Alternating Characters](Strings_Alternating_Characters.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/alternating-characters/problem)*
 - Trees: Is This a Binary Search Tree?](Trees_Is_This_a_Binary_Search_Tree.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-is-binary-search-tree/problem)*
 - [Binary Search Tree : Lowest Common Ancestor](Trees_Is_This_a_Binary_Search_Tree.py) - *Full question can be found [here]https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor/problem)*
+- [Two Strings](Two_Strings.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/two-strings/problem)*
 
 ## LeetCode
 [Largest Numbers](largest_number.py) - *Full question can be found [here](https://leetcode.com/problems/largest-number)*
