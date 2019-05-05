@@ -34,6 +34,8 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 25](DailyCodingProblem/25_Facebook_regular_expression.py)
 - [Daily Coding problem # 26](DailyCodingProblem/26_Google_Remove_from_LinkedList.py)
 - [Daily Coding problem # 27](DailyCodingProblem/27_balanced_brackets.py)
+- [Daily Coding problem # 28](DailyCodingProblem/28_Palantir_Justtify_text.py)
+
 
 
 ## HackerRank
@@ -63,6 +65,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Binary Search Tree : Lowest Common Ancestor](Trees_Is_This_a_Binary_Search_Tree.py) - *Full question can be found [here]https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor/problem)*
 - [Two Strings](Two_Strings.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/two-strings/problem)*
 - [XOR Swap](XOR_swap.py) - *Full question can be found [here](https://www.hackerrank.com/topics/bitwise-xor)*
+- [Reverse a linked list](Linked_Lists_ReverseLinkedList.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/reverse-a-linked-list/problem)*
 
 
 ## LeetCode
