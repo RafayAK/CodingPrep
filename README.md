@@ -37,7 +37,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 28](DailyCodingProblem/28_Palantir_Justtify_text.py)
 - [Daily Coding problem # 29](DailyCodingProblem/29_Amazon_Run_length_encoding.py)
 - [Daily Coding problem # 30](DailyCodingProblem/30_Facebook_Holding_capacity.py)
-
+- [Daily Coding problem # 31](DailyCodingProblem/31_Google_Min_Edit_Distance.py)
 
 
 ## HackerRank
@@ -68,7 +68,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Two Strings](Two_Strings.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/two-strings/problem)*
 - [XOR Swap](XOR_swap.py) - *Full question can be found [here](https://www.hackerrank.com/topics/bitwise-xor)*
 - [Reverse a linked list](Linked_Lists_ReverseLinkedList.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/reverse-a-linked-list/problem)*
-
+- [Linked Lists: Detect a Cycle](LinkedList_FindCycleInLinkedList.py) -  *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-linked-list-cycle/problem)*
 
 ## LeetCode
 [Largest Numbers](largest_number.py) - *Full question can be found [here](https://leetcode.com/problems/largest-number)*
