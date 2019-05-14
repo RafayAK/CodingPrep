@@ -70,7 +70,7 @@ Pull requests welcome, if you want to improve my implementation
 - [XOR Swap](XOR_swap.py) - *Full question can be found [here](https://www.hackerrank.com/topics/bitwise-xor)*
 - [Reverse a linked list](Linked_Lists_ReverseLinkedList.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/reverse-a-linked-list/problem)*
 - [Linked Lists: Detect a Cycle](LinkedList_FindCycleInLinkedList.py) -  *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-linked-list-cycle/problem)*
-- [Insert a node at a specific position in a linked list](DailyCodingProblem/LinkedLists_FindMergePointOfTwoLists.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem)*
+- [Insert a node at a specific position in a linked list](LinkedLists_FindMergePointOfTwoLists.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem)*
 
 ## LeetCode
 [Largest Numbers](largest_number.py) - *Full question can be found [here](https://leetcode.com/problems/largest-number)*
