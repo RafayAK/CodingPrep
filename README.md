@@ -39,6 +39,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 30](DailyCodingProblem/30_Facebook_Holding_capacity.py)
 - [Daily Coding problem # 31](DailyCodingProblem/31_Google_Min_Edit_Distance.py)
 - [Daily Coding problem # 32](DailyCodingProblem/32_Jane_Street_Currency_Arbitration.py)
+- [Daily Coding problem # 33](DailyCodingProblem/33_MS_Running_Median.py)
 
 
 ## HackerRank
@@ -70,7 +71,10 @@ Pull requests welcome, if you want to improve my implementation
 - [XOR Swap](XOR_swap.py) - *Full question can be found [here](https://www.hackerrank.com/topics/bitwise-xor)*
 - [Reverse a linked list](Linked_Lists_ReverseLinkedList.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/reverse-a-linked-list/problem)*
 - [Linked Lists: Detect a Cycle](LinkedList_FindCycleInLinkedList.py) -  *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-linked-list-cycle/problem)*
-- [Insert a node at a specific position in a linked list](LinkedLists_FindMergePointOfTwoLists.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem)*
+<<<<<<< HEAD
+- [Insert a node at a specific position in a linked list](LinkedList_InsertNodeAtSpecificPosition.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem)*
+- [Inserting a Node Into a Sorted Doubly Linked List](LinkedList_InsertNodeInSortedDoublyLinkedList.py)- *Full question can be found [here](https://www.hackerrank.com/challenges/insert-a-node-into-a-sorted-doubly-linked-list/problem)*
+>>>>>>> 2bbc91486547db8b1d20253020b7654b01df6751
 
 ## LeetCode
 [Largest Numbers](largest_number.py) - *Full question can be found [here](https://leetcode.com/problems/largest-number)*
