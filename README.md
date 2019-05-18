@@ -41,6 +41,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 32](DailyCodingProblem/32_Jane_Street_Currency_Arbitration.py)
 - [Daily Coding problem # 33](DailyCodingProblem/33_MS_Running_Median.py)
 - [Daily Coding problem # 34](DailyCodingProblem/34_Quora_Make_Palindrome.py)
+- [Daily Coding problem # 35](DailyCodingProblem/35_Google_Arrange_Chars_in_Linear_time.py)
 
 
 ## HackerRank
@@ -75,7 +76,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Insert a node at a specific position in a linked list](LinkedList_InsertNodeAtSpecificPosition.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem)*
 - [Inserting a Node Into a Sorted Doubly Linked List](LinkedList_InsertNodeInSortedDoublyLinkedList.py)- *Full question can be found [here](https://www.hackerrank.com/challenges/insert-a-node-into-a-sorted-doubly-linked-list/problem)*
 - [Find Merge Point of Two Lists](LinkedLists_FindMergePointOfTwoLists.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/find-the-merge-point-of-two-joined-linked-lists/problem)*
-
+- [Reverse a doubly linked list](LinkedLists_ReveserseDoublyLinkedList.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list/problem)*
 
 ## LeetCode
 [Largest Numbers](largest_number.py) - *Full question can be found [here](https://leetcode.com/problems/largest-number)*
