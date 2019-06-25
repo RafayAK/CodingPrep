@@ -44,6 +44,8 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 35](DailyCodingProblem/35_Google_Arrange_Chars_in_Linear_time.py)
 - [Daily Coding problem # 36](DailyCodingProblem/36_Dropbox_Find_Second_Largest_Node_in_BST.py)
 - [Daily Coding problem # 37](DailyCodingProblem/37_Google_Power_Set.py)
+- [Daily Coding problem # 38](DailyCodingProblem/38_Ms_N_Queens.py)
+
 
 
 ## HackerRank
