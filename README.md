@@ -45,6 +45,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 36](DailyCodingProblem/36_Dropbox_Find_Second_Largest_Node_in_BST.py)
 - [Daily Coding problem # 37](DailyCodingProblem/37_Google_Power_Set.py)
 - [Daily Coding problem # 38](DailyCodingProblem/38_Ms_N_Queens.py)
+- [Daily Coding problem # 39](DailyCodingProblem/39_Dropbox_Conways_Game_of_Life.py)
 
 
 
