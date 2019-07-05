@@ -49,6 +49,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 40](DailyCodingProblem/40_Goolge_Find_Nonduplicate_Int.py)
 - [Daily Coding problem # 41](DailyCodingProblem/41_Facebook_Find_valid_Itinerary.py)
 - [Daily Coding problem # 42](DailyCodingProblem/42_Google_Find_subset_adding_to_k.py)
+- [Daily Coding problem # 43](DailyCodingProblem/43_Amazon_Implement_Stack.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
