@@ -77,4 +77,4 @@ if __name__ == '__main__':
     for number in results_dic:
         results_dic[number] = results_dic[number] / num_experiments
         print("Probability of {0}: {1:.2f} ----- Desired Probability:{2:.2f}".format(number, results_dic[number], desired_prob))
-        assert round(desired_prob, 2) == round(results_dic[number],2)
+        assert round(desired_prob, 2) == round(results_dic[number], 2)
