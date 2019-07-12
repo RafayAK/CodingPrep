@@ -54,6 +54,8 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 45](DailyCodingProblem/45_TwoSigma_Implement_Rand7_from_Rand5.py)
 - [Daily Coding problem # 46](DailyCodingProblem/46_Amazon_Longest_Palindromic_Subsequence.py)
 - [Daily Coding problem # 47](DailyCodingProblem/47_Facebook_Stock_Buying_and_Selling.py)
+- [Daily Coding problem # 48](DailyCodingProblem/48_Google_Reconstruct_Tree.py)
+
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
