@@ -58,6 +58,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 49](DailyCodingProblem/49_Amazon_Max_Sum_Contiguous_Subsequence.py)
 - [Daily Coding problem # 50](DailyCodingProblem/50_Microsoft_Arithmetic_In_Tree.py)
 - [Daily Coding problem # 51](DailyCodingProblem/51_Facebook_Shuffle_Cards.py)
+- [Daily Coding problem # 52](DailyCodingProblem/52_Google_LRU.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
