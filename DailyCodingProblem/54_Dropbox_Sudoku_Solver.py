@@ -81,8 +81,7 @@ def solve_puzzle(puzzle):
             result = solve_puzzle(puzzle)
             if check_board_filled(result):
                 return result
-
-        puzzle[cell_row][cell_col] = 'O'
+            puzzle[cell_row][cell_col] = 'O'
 
     return puzzle
 
