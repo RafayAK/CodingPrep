@@ -63,6 +63,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 54](DailyCodingProblem/54_Dropbox_Sudoku_Solver.py)
 - [Daily Coding problem # 55](DailyCodingProblem/55_Microsoft_shortenURL.py)
 - [Daily Coding problem # 56](DailyCodingProblem/56_Google_Color_Adjacency_Matrix.py)
+- [Daily Coding problem # 57](DailyCodingProblem/57_Amazon_Breakup_Text_Into_k_size_sentences.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
