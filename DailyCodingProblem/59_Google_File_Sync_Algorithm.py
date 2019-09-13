@@ -145,8 +145,6 @@ def get_differing_files(dir_1:MerkleDirectory, dir_2:MerkleDirectory):
 
     else:
         while(root_1 or root_2):
-            temp_root_1 = root_1
-            temp_root_2 = root_2
 
             if root_1 and not root_2:
                 print("\"{}\" exists on System_1 but does not exist on System_2".format(root_1.file_name))
