@@ -66,6 +66,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 57](DailyCodingProblem/57_Amazon_Breakup_Text_Into_k_size_sentences.py)
 - [Daily Coding problem # 58](DailyCodingProblem/58_Amazon_Find_Element_In_Rotated_Array.py)
 - [Daily Coding problem # 59](DailyCodingProblem/59_Google_File_Sync_Algorithm.py)
+- [Daily Coding problem # 60](DailyCodingProblem/60_Facebook_Partition_Multiset.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
