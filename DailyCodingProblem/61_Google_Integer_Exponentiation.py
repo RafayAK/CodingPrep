@@ -12,7 +12,7 @@ For example, pow(2, 10) should return 1024.
 memo_table = {}  # dictionary for memoization
 
 
-def pow(number, exponent):
+def helper(number, exponent):
 
     # if we've already calculated this exponent then just return that
     if (number, exponent) in memo_table:
@@ -39,7 +39,13 @@ def pow(number, exponent):
         memo_table[(number, exponent)] = pow(number, exponent//2) * pow(number, exponent//2) * number
         return memo_table[(number, exponent)]
 
-    
+
+def pow(number, exponent):
+    abs_exponent = abs(exponent)
+
+    result = helper(number, abs_exponent)
+    return 1/result if exponent<0 else result
+
 
 
 if __name__ == '__main__':
@@ -47,3 +53,4 @@ if __name__ == '__main__':
     print(pow(3, 20))
     print(pow(15, 15))
     print(pow(15,0))
+    print(pow(2,-3))
