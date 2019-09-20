@@ -69,6 +69,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 60](DailyCodingProblem/60_Facebook_Partition_Multiset.py)
 - [Daily Coding problem # 61](DailyCodingProblem/61_Google_Integer_Exponentiation.py)
 - [Daily Coding problem # 62](DailyCodingProblem/62_Facebook_Count_Traversal_For_Matrix.py)
+- [Daily Coding problem # 63](DailyCodingProblem/63_Microsoft_Find_Word_In_Matrix.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
