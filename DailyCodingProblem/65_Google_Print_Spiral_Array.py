@@ -65,3 +65,8 @@ if __name__ == '__main__':
 
     spiral_print(arr)
 
+    matrix_1 = [[1, 2, 3],
+                [6, 7, 8],
+                [11, 12, 13],
+                [16, 17, 18]]
+    spiral_print(matrix_1)
