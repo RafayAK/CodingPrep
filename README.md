@@ -2,9 +2,9 @@
 Repo for all the coding questions I slove in Python.
 This repo has questions from HackerRank, LeetCode and Daily Coding Problem
 
-Pull requests welcome, if you want to improve my implementation
+Pull requests are welcome, if you want to improve my implementation
 
-**All files have their question, copied verbatim, at the top of the file.**
+**All Python files have their question, copied verbatim, at the top of the file.**
 
 ## Daily Coding problems
 - [Daily Coding problem # 1](DailyCodingProblem/1_Google_Two_Sum.py)
@@ -74,6 +74,7 @@ Pull requests welcome, if you want to improve my implementation
 - [Daily Coding problem # 65](DailyCodingProblem/65_Google_Print_Spiral_Array.py)
 - [Daily Coding problem # 66](DailyCodingProblem/66_Square_Biased_Coin.py)
 - [Daily Coding problem # 67](DailyCodingProblem/67_Google_LFU_cache.py)
+- [Daily Coding problem # 68](DailyCodingProblem/68_Google_Find_Attacking_Bishops.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
