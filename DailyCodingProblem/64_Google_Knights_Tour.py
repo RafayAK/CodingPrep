@@ -20,6 +20,9 @@ moves = [(2, 1),
          (-1, -2)]
 
 
+# this naive implementation turns out be O(n^4). Takes too long when board_size=5
+
+
 def create_board(n):
     return [['O' for _ in range(n)] for _ in range(n)]
 
@@ -56,9 +59,10 @@ def num_of_tours(board_size):
     for row in range(board_size):
         for col in range(board_size):
             num_tours += find_tours(copy.deepcopy(board), board_size, start_row=row, start_col=col)
+            print(num_tours)
 
     return num_tours
 
 
 if __name__ == '__main__':
-    print(num_of_tours(board_size=3))
+    print(num_of_tours(board_size=5))
