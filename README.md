@@ -4,7 +4,7 @@ This repo has questions from HackerRank, LeetCode and Daily Coding Problem
 
 Pull requests welcome, if you want to improve my implementation
 
-**All files have their question, copied verbatim, at the top of the file.**
+**All Python files have their question, copied verbatim, at the top of the file.**
 
 ## Daily Coding problems
 - [Daily Coding problem # 1](DailyCodingProblem/1_Google_Two_Sum.py)
