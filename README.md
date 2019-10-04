@@ -2,7 +2,7 @@
 Repo for all the coding questions I slove in Python.
 This repo has questions from HackerRank, LeetCode and Daily Coding Problem
 
-Pull requests welcome, if you want to improve my implementation
+Pull requests are welcome, if you want to improve my implementation
 
 **All Python files have their question, copied verbatim, at the top of the file.**
 
