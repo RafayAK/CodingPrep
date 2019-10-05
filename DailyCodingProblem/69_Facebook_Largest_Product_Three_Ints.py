@@ -26,32 +26,28 @@ You can assume the list has at least three integers.
 
 
 def largest_product(numbers:list):
-    memo_dict = {}
     max_recursion_depth = 3
 
     def helper(arr, product=1, recursion_depth=0):
-        if tuple(arr) in memo_dict:
-            return memo_dict
+        if recursion_depth < 3  and len(arr) == 0:  # invalid case -> not enough number to compute product of threes
+            return float('-inf')  # return -inf in this case
 
-        if recursion_depth == max_recursion_depth:
-            return arr[0]
 
-        if len(arr) == 0:
-            return 0
+        if len(arr) == 0 or recursion_depth==max_recursion_depth:
+            return product
 
-        list_of_products = []
+        list_products = []
 
-        for i in range(0, len(arr)):
-            list_of_products += [helper(arr[i + 1:], product * arr[i], recursion_depth + 1)]
+        for i in range(len(arr)):
+            list_products+=[helper(arr[i+1:], product*arr[i], recursion_depth+1)]
 
-        memo_dict[tuple(arr)] = max(list_of_products)
-
-        return memo_dict[tuple(arr)]
+        return max(list_products)
 
 
     max_product = float('-inf')
     for i in range(len(numbers)):
-        res = helper(numbers[i:])
+        if len(numbers[i:]) > 2:  # perform this iff there are at least 3 numbers in the list
+            res = helper(numbers[i:])
         max_product = max(res, max_product)
 
     return max_product
@@ -62,4 +58,5 @@ def largest_product(numbers:list):
 
 if __name__ == '__main__':
 
-    print(largest_product([-10, -10, 5, 2]))
+    print(largest_product([-10, -10, 5, 2]))  # ans 500
+    print(largest_product([-10, -10, -5, -2]))  # ans -100
