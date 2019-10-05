@@ -9,22 +9,6 @@ For example, if the list is [-10, -10, 5, 2], we should return 500, since that's
 You can assume the list has at least three integers.
 """
 
-
-# def helper(arr, product=1, recursion_depth=0):
-#     if len(arr) <= 2:
-#         return max(product * arr[0], product * arr[1])
-#     if recursion_depth == max_recursion_depth:
-#         return product
-#
-#     list_of_products = []
-#
-#     for i in range(0, len(arr)):
-#         list_of_products += [helper(arr[i + 1:], product * arr[i], recursion_depth + 1)]
-#
-#     return max(list_of_products)
-
-
-
 def largest_product(numbers:list):
     max_recursion_depth = 3
 
