@@ -75,6 +75,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 66](DailyCodingProblem/66_Square_Biased_Coin.py)
 - [Daily Coding problem # 67](DailyCodingProblem/67_Google_LFU_cache.py)
 - [Daily Coding problem # 68](DailyCodingProblem/68_Google_Find_Attacking_Bishops.py)
+- [Daily Coding problem # 69](DailyCodingProblem/69_Facebook_Largest_Product_Three_Ints.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
