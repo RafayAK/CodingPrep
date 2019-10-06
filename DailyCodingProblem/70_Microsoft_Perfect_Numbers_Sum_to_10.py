@@ -17,8 +17,7 @@ For example, given 1, you should return 19. Given 2, you should return 28.
 # -----------------------------------------------
 #  19, 28, 37 46, 64, 46, 73, 82, 91, 100, 109, 118
 
-# so 19+(n*9) eg first th digit is 19 = ((1+1)*9) +1 = 18+1
-# i.e all multiples of 9 +1 form 2 onwards
+# so 19+(n*9)
 
 # but there is one problem in this method 10th->100 number if not a perfect num
 # 10th number should be the next one then 10th=>109
@@ -51,6 +50,20 @@ def find_perfect_num(n):
 
         n_th_num += 9
 
+#
+# def outliers(n): # experiment to see if there is a pattern to the outliers -> There isn't :(
+#     l=[]
+#
+#     for i in range(1, n):
+#         num = ((i+1)*9)+1
+#
+#         s = sum(list(map(int, str(num))))
+#
+#         if s!=10:
+#             l.append(num)
+#
+#     return l
+
 
 if __name__ == '__main__':
     # print(find_perfect_num(1))
@@ -59,6 +72,8 @@ if __name__ == '__main__':
     # print(find_perfect_num(21))
     # print(find_perfect_num(91))
     # print(find_perfect_num(88))
-
+    #
     for i in range(1, 101):
         print("{}#: {}".format(i, find_perfect_num(i)))
+
+    # print(outliers(2001))
