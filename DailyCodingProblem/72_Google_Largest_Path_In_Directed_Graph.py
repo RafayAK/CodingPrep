@@ -29,101 +29,92 @@ A
 [(0, 0)]
 Should return null, since we have an infinite loop.
 """
-import copy
+UNVISITED = 0
+VISITING = 1
+VISITED = 2
+
 class graph_node:
     def __init__(self, name):
         self.name = name
-        self.paths = []
-        self.VISITED = False
+        self.neighbours = []
+        self.STATE = UNVISITED  # Possible states UNVISITED, VISITING, VISITED
+
+    def __repr__(self):
+        return "(name:{}, neighbours:{})".format(self.name, self.neighbours)
 
 
+def create_graph(nodes:str, edge_list):
+    labeled_nodes = dict()  # save in format 1: graphs_node(name='A')
+    for i in range(len(nodes)):
+        gn = graph_node(name=nodes[i])
+        labeled_nodes[i] = gn
 
-def create_nodes(nodes:str):
-    letters = dict() # to keep track of num of times a letter appears, then use count to name node appropriately
-
-    labeled_nodes = dict()
-    labels = []
-    for node in nodes:
-        if node not in letters:
-            letters[node] = 0
-        else:
-            letters[node] += 1
-        # labeled_nodes.append("{}{}".format(node,letters[node]))  # nodes are in form A0, B0, A1, C0, A2
-        gn = graph_node(name=node)
-        labeled_nodes["{}{}".format(node, letters[node])] = gn
-        labels.append("{}{}".format(node, letters[node]))
-    return labeled_nodes, labels
+    for start, end in edge_list:  # add all the neighbours to the nodes
+        labeled_nodes[start].neighbours.append(end)
+    return labeled_nodes
 
 
-def create_adj_matrix(labeled_nodes, labels, edge_list):
-    adj_matrix = {}
-
-    for start, end in edge_list:
-        labeled_nodes[labels[start]].paths.append(labels[end])
-
-        if labels[start] not in adj_matrix:
-            adj_matrix[labels[start]] = []
-
-        adj_matrix[labels[start]].append(labels[end])
-
-    return labeled_nodes, adj_matrix
+max_freq_memo = {}  # stores maximum frequency letter in path computed from every node
 
 
+def dfs(start_node, labeled_nodes, frequency_dict=None):  # here since dict is mutable will be shared across instances
+    if frequency_dict is None:
+        frequency_dict = dict()
+    if labeled_nodes[start_node].STATE == VISITED:
+        return False
+    elif labeled_nodes[start_node].STATE == VISITING:
+        return -1 # found a loop
 
-def max_path(labeled_nodes, adj_mat:dict):
+    labeled_nodes[start_node].STATE = VISITING
 
-    # helper returns the most frequent node in the path
-    def helper(start_node, next_nodes, frequency_dict, labeled_nodes):
-        if labeled_nodes[start_node].VISITED is False:
-            labeled_nodes[start_node].VISITED = True
-        else:
-            return None  # found infinite loop
+    # if has neighbours
+    if len(labeled_nodes[start_node].neighbours) > 0:
+        for neighbour in labeled_nodes[start_node].neighbours:
+            frequency_dict = dfs(start_node=neighbour, labeled_nodes=labeled_nodes, frequency_dict={})
+            if frequency_dict == -1:
+                return -1
+            if labeled_nodes[start_node].name not in frequency_dict:
+                frequency_dict[labeled_nodes[start_node].name] = 0
 
-
-        temp_dict = {}
-
-        if labeled_nodes[start_node].name in frequency_dict:
             frequency_dict[labeled_nodes[start_node].name] += 1
-        else:
-            temp_dict[labeled_nodes[start_node].name]=1
+            if start_node not in max_freq_memo:
+                max_freq_memo[start_node] = 0
+            max_freq_memo[start_node] = max(max_freq_memo[start_node], max(frequency_dict.values()))
 
-        if start_node not in adj_mat:
-            combined_dict = dict(**temp_dict,**frequency_dict)
-            return max(combined_dict.values())
+        return frequency_dict
 
-        max_frequency = 0
-        for node in next_nodes:
-            nn = [] if node not in adj_mat else adj_mat[node]
-            frequency = helper(node, nn, dict(**temp_dict,**frequency_dict), labeled_nodes)
-            if frequency is None:
+    # executes when no neighbours does not have neighbours
+    if labeled_nodes[start_node].name not in frequency_dict:
+        frequency_dict[labeled_nodes[start_node].name] = 0
+
+    frequency_dict[labeled_nodes[start_node].name] += 1
+    max_freq_memo[start_node] = max(frequency_dict.values())
+
+
+    labeled_nodes[start_node].STATE = VISITED
+
+    return frequency_dict
+
+
+
+
+def find_longest_path(nodes:str, edge_list:list):
+    global max_freq_memo
+    max_freq_memo = {}  # rest if filled
+    labeled_nodes = create_graph(nodes, edge_list)
+
+
+    for node_iter in range(len(nodes)):
+        if node_iter not in max_freq_memo:
+            # perform depth first search
+            if dfs(start_node=node_iter, labeled_nodes=labeled_nodes) == -1: # if found a loop
                 return None
-            max_frequency = max(max_frequency, frequency)
 
-        return max_frequency
+    return max(max_freq_memo.values())
 
-    max_path_len = 0
-    for node, paths in adj_mat.items():
-        path_len = helper(start_node=node, next_nodes=paths, frequency_dict={}, labeled_nodes=copy.deepcopy(labeled_nodes))
-
-        if path_len is None:
-            return None
-
-        max_path_len = max(max_path_len, path_len)
-
-    return max_path_len
-
-
-def find_longest_path(nodes, edge_list):
-    # create the nodes. Note each capital letter is a separate node even if has same identifier
-    #   eg.'AA'-> node_A, node_A1
-    labeled_nodes, labels = create_nodes(nodes)
-
-    # create adjacency matrix for the directed graph
-    labeled_nodes, adj_mat = create_adj_matrix(labeled_nodes, labels, edge_list)
-
-    return max_path(labeled_nodes, adj_mat)
 
 if __name__ == '__main__':
-    print(find_longest_path('ABACA', edge_list=[(0, 1), (0, 2), (2, 3), (3, 4)]))
-    print(find_longest_path('A', edge_list=[(0, 0)]))
-
+    assert(find_longest_path('ABACA', edge_list=[(0, 1), (0, 2), (2, 3), (3, 4)])==3)
+    assert not (find_longest_path('A', edge_list=[(0, 0)]))
+    assert (find_longest_path('ABACADAAA', edge_list=[(0, 1), (1, 5), (5, 6), (6, 7), (7, 8), (0, 2), (2, 3), (3, 4)])==4)
+    assert not (find_longest_path('ABC', edge_list=[(0, 1), (1, 2), (2, 1)]))
