@@ -59,7 +59,7 @@ def num_of_tours(board_size):
     for row in range(board_size):
         for col in range(board_size):
             num_tours += find_tours(copy.deepcopy(board), board_size, start_row=row, start_col=col)
-            print(num_tours)
+            #print(num_tours)
 
     return num_tours
 
