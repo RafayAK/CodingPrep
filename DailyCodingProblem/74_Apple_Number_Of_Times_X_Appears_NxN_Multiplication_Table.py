@@ -49,10 +49,10 @@ def count_in_table(table_size, X):
 
 
 if __name__ == '__main__':
-    print(count_in_table(table_size=6, X=12))
-    print(count_in_table(table_size=6, X=2))
-    print(count_in_table(table_size=6, X=15))
-    print(count_in_table(table_size=6, X=36))
-    print(count_in_table(table_size=6, X=1))
-    print(count_in_table(table_size=6, X=25))
-    print(count_in_table(table_size=6, X=20))
+    assert count_in_table(table_size=6, X=12) == 4
+    assert count_in_table(table_size=6, X=2) == 2
+    assert count_in_table(table_size=6, X=15) == 2
+    assert count_in_table(table_size=6, X=36) == 1
+    assert count_in_table(table_size=6, X=1) == 1
+    assert count_in_table(table_size=6, X=25) == 1
+    assert count_in_table(table_size=6, X=20) == 2
