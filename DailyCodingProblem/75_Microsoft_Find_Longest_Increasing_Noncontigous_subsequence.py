@@ -44,3 +44,5 @@ def long_subsequence(arr):
 if __name__ == '__main__':
     print(long_subsequence([0, 4, 6, 2, 3, 5, 9]))
     print(long_subsequence([0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15]))
+    print(long_subsequence([11]))
+    print(long_subsequence([]))
