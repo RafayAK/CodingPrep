@@ -39,7 +39,7 @@ def long_subsequence(arr):
         if len(res) > len(longest):
             longest = res
 
-    return longest
+    return len(longest)
 
 if __name__ == '__main__':
     print(long_subsequence([0, 4, 6, 2, 3, 5, 9]))
