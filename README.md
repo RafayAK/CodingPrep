@@ -81,6 +81,8 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 72](DailyCodingProblem/72_Google_Largest_Path_In_Directed_Graph.py)
 - [Daily Coding problem # 73](DailyCodingProblem/73_Google_Reverse_Singly_Linked_List.py)
 - [Daily Coding problem # 74](DailyCodingProblem/74_Apple_Number_Of_Times_X_Appears_NxN_Multiplication_Table.py)
+- [Daily Coding problem # 75](DailyCodingProblem/75_Microsoft_Find_Longest_Increasing_Noncontigous_subsequence.py)
+
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
 - [Array Manipulation](Array_manipulation.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/crush/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays)*
