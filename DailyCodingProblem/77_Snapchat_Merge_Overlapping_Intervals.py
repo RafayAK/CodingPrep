@@ -49,3 +49,7 @@ def merge_intervals(intervals):
 
 if __name__ == '__main__':
     print(merge_intervals([(1, 3), (5, 8), (4, 10), (20, 25)]))  # [(1, 3), (4, 10), (20, 25)]
+    print(merge_intervals([(1, 3), (5, 8), (4, 10), (20, 25), (6, 12)]))  # [(1, 3), (4, 12), (20, 25)]
+    print(merge_intervals([(1, 3), (5, 8), (3, 10)]))  # [(1, 10)]
+    print(merge_intervals([(1, 3), (4, 7), (5, 8), (3, 10), (3, 11)]))  # [(1, 11)]
+
