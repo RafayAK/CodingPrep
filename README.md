@@ -4,6 +4,8 @@ This repo has questions from HackerRank, LeetCode and Daily Coding Problem
 
 Pull requests are welcome, if you want to improve my implementation
 
+_Forks rather than Clones, Stars ranther than Views_
+
 **All Python files have their question, copied verbatim, at the top of the file.**
 
 ## Daily Coding problems
@@ -83,6 +85,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 74](DailyCodingProblem/74_Apple_Number_Of_Times_X_Appears_NxN_Multiplication_Table.py)
 - [Daily Coding problem # 75](DailyCodingProblem/75_Microsoft_Find_Longest_Increasing_Noncontigous_subsequence.py)
 - [Daily Coding problem # 76](DailyCodingProblem/76_Google_Remove_Cols_to_Make_Lexographical.py)
+- [Daily Coding problem # 77](DailyCodingProblem/77_Snapchat_Merge_Overlapping_Intervals.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
