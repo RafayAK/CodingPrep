@@ -4,7 +4,7 @@ This repo has questions from HackerRank, LeetCode and Daily Coding Problem
 
 Pull requests are welcome, if you want to improve my implementation
 
-_Forks rather than Clones, Stars rather than Views_
+***Forks rather than Clones, Stars rather than Views*** 🙏
 
 **All Python files have their question, copied verbatim, at the top of the file.**
 
