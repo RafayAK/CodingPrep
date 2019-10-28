@@ -86,6 +86,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 75](DailyCodingProblem/75_Microsoft_Find_Longest_Increasing_Noncontigous_subsequence.py)
 - [Daily Coding problem # 76](DailyCodingProblem/76_Google_Remove_Cols_to_Make_Lexographical.py)
 - [Daily Coding problem # 77](DailyCodingProblem/77_Snapchat_Merge_Overlapping_Intervals.py)
+- [Daily Coding problem # 78](DailyCodingProblem/78_Google_K_Sorted_Singly_LinkedList_to_One_list.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
