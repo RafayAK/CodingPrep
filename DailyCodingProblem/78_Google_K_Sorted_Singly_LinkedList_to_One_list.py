@@ -14,7 +14,7 @@ class Node:
         return "{}->{}".format(self.data, self.nxt)
 
 
-def combine_lls(lls: list):
+def combine_lls(lls):  # lls : is a list of linked list heads
     new_ll = None
     tail = None
 
@@ -66,4 +66,4 @@ if __name__ == '__main__':
 
     res = combine_lls([ll_1, ll_2, ll_3])
 
-    print(res)  # 1->2->2->3->3->3->4->4->4->5->5->6->None
+    print(res)  # 1->1->2->3->3->4->6->7->9->None
