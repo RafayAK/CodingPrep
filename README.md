@@ -90,6 +90,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 79](DailyCodingProblem/79_Facebook_Change_One_Number_to_Make_Increasing_list.py)
 - [Daily Coding problem # 80](DailyCodingProblem/80_Google_Return_Deepest_Node_Binary_Tree.py)
 - [Daily Coding problem # 81](DailyCodingProblem/81_Yelp_Return_All_Possible_Combos_of_Code.py)
+- [Daily Coding Probelm # 82](DailyCodingProblem/82_Microsoft_Implement_Read_N.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
