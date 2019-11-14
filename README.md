@@ -1,5 +1,5 @@
 # CodingPrep
-Repo for all the coding questions I slove in Python.
+Repository for all the coding questions I solve in Python.
 This repo has questions from HackerRank, LeetCode and Daily Coding Problem
 
 Pull requests are welcome, if you want to improve my implementation
