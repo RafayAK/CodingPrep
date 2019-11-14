@@ -98,6 +98,8 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding Probelm # 84](DailyCodingProblem/84_Amazon_Find_Islands_From_Matrix.py)
 - [Daily Coding Probelm # 85](DailyCodingProblem/85_Facebook_Conditional_Ops_Using_Math_on_32bit_Ints.py)
 - [Daily Coding Probelm # 86](DailyCodingProblem/86_Google_Num_Of_Parantheses_To_Remove_To_Make_Valid_Parantheses.py)
+- [Daily Coding Problem # 87](DailyCodingProblem/87_Uber_Validate_Discrete_Logic.py)
+- [Daily Coding Problem # 88](DailyCodingProblem/88_ContextLogic_Implement_Division_with_Add_and_Subtract.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
