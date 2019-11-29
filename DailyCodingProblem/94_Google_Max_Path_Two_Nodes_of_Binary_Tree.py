@@ -102,3 +102,22 @@ if __name__ == '__main__':
                              )
 
     print(find_max_path_sum(tree_3))
+
+    print("\n-------------\n")
+
+    """
+          -10
+           / \       max=42   20
+          9  20              /  \ 
+            /  \            15   7
+           15   7
+           /     \
+        -15       -7
+        """
+    tree_4 = Node(-10,
+                  left=Node(9),
+                  right=Node(20,
+                             left=Node(15, left=Node(-15)),
+                             right=Node(7, right=Node(-7))))
+    print(find_max_path_sum(tree_4))
+
