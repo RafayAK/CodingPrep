@@ -33,15 +33,72 @@ def find_max_path_sum(root : Node):
         if root.right:
             right_value = helper(root.right)
 
-        if left_value and right_value:
-            max_sum = max(max_sum, root.value+left_value, root.value+right_value,
-                      root.value+right_value+left_value)
+        if right_value and left_value:
+            max_sum = max(max_sum, left_value+right_value+root.value)
+            return max(left_value+root.value, right_value+root.value, root.value)
         elif left_value:
-            max_sum = max(max_sum, root.value + left_value)
-        else:
-            max_sum = max(max_sum, root.value + right_value)
+            max_sum = max(max_sum, left_value + root.value)
+            return max(left_value+root.value, root.value)
+        elif right_value:
+            max_sum = max(max_sum, right_value + root.value)
+            return max(right_value + root.value, root.value)
 
-        return root.value
-
+        return root.value  # if leaf
     helper(root)
     return max_sum
+
+
+if __name__ == '__main__':
+    """
+       1
+      / \    max = 6
+     2   3
+    """
+    tree_1 = Node(1, left=Node(2), right=Node(3))
+
+    print(find_max_path_sum(tree_1))
+
+    print("\n-------------\n")
+
+    """
+      -10
+       / \       max=42   20
+      9  20              /  \ 
+        /  \            15   7
+       15   7
+    """
+    tree_2 = Node(-10,
+                  left=Node(9),
+                  right=Node(20,
+                             left=Node(15),
+                             right=Node(7)))
+    print(find_max_path_sum(tree_2))
+
+    print("\n-------------\n")
+    """
+                                -15                                     6
+                             /      \                                   / \               
+                            5        6                                 3   9                                              
+                          /  \       / \                                    \                                                                      
+                        -8    1     3   9            max = 27                0                                 
+                       /  \             \                                     \                                                           
+                      2    6             0                                    -1                                                                 
+                                        /  \                                 /                                                          
+                                       4    -1                             10                                              
+                                            /                                                                                   
+                                           10                                                                                       
+    """
+
+    tree_3 = Node(-15,
+                  left=Node(5,
+                            left=Node(-8, left=Node(2), right=Node(6)),
+                            right=Node(1)
+                  ),
+                  right=Node(6,
+                             left=Node(3),
+                             right=Node(9,
+                                        right=Node(0, left=Node(4),
+                                                   right=Node(-1, left=Node(10)))))
+                             )
+
+    print(find_max_path_sum(tree_3))
