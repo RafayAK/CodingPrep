@@ -106,6 +106,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 92](DailyCodingProblem/92_Dropbox_Sort_Courses_with_Prereqs.py)
 - [Daily Coding problem # 93](DailyCodingProblem/93_Apple_Find_largest_subtree_BST.py)
 - [Daily Coding problem # 94](DailyCodingProblem/94_Google_Max_Path_Two_Nodes_of_Binary_Tree.py)
+- [Daily Coding problem # 95](DailyCodingProblem/95_Palantir_Next_Greater_Permutation.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
