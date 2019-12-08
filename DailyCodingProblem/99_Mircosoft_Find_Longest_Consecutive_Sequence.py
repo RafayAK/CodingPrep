@@ -65,7 +65,35 @@ def longest_consecutive(arr):
     return len(max(sequences, key=lambda array:len(array)))
 
 
+
+# -----------------------------
+# much simpler alternative also O(n)
+def longest_consecutive_redux(arr):
+
+    max_seq_len = 0
+    # store arr in the a set
+    s = set()
+    for num in arr:
+        s.add(num)
+
+    for num in arr:
+        if num-1 not in s:
+            # if num-1 not in list that means its the start of a sequence
+            number = num
+            count = 0
+            # find al the numbers in the sequence
+            while number in s:
+                count += 1
+                number += 1
+            max_seq_len = max(max_seq_len, count)
+    return max_seq_len
+
 if __name__ == '__main__':
-    print(longest_consecutive([100, 4, 200, 1, 3, 2]))   # 4
-    print(longest_consecutive([100, 4, 200, 1, 3, 2, 5]))  # 5
-    print(longest_consecutive([100, 8, 2, 4, 10, 101, 102, 12, 15, 99]))  #  4
+    # print(longest_consecutive([100, 4, 200, 1, 3, 2]))   # 4
+    # print(longest_consecutive([100, 4, 200, 1, 3, 2, 5]))  # 5
+    # print(longest_consecutive([100, 8, 2, 4, 10, 101, 102, 12, 15, 99]))  #  4
+
+    print(longest_consecutive_redux([100, 4, 200, 1, 3, 2]))   # 4
+    print(longest_consecutive_redux([100, 4, 200, 1, 3, 2, 5]))  # 5
+    print(longest_consecutive_redux([100, 8, 2, 4, 10, 101, 102, 12, 15, 99]))  #  4
+
