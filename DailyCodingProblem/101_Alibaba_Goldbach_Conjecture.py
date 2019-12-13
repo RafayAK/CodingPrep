@@ -17,7 +17,7 @@ If [a, b] is one solution with a <= b, and [c, d] is another solution with c <= 
 If a < c OR a==c AND b < d.
 """
 
-
+# this function creates primes through "Sieve of Eratosthenes"
 def primes(n):
     numbers = [True for _ in range(n+1)]
 
