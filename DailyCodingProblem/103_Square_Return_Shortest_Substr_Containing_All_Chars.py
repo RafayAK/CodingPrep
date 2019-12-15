@@ -29,3 +29,8 @@ def get_shortest_str_with_all_chars(string, chars):
 if __name__ == '__main__':
     print(get_shortest_str_with_all_chars("figehaeci", {'a', 'e', 'i'}))
     print(get_shortest_str_with_all_chars("abccbbbccbcb", {'a', 'b', 'c'}))
+    print(get_shortest_str_with_all_chars("abcdedbc", {'d', 'b', 'b'}))
+    print(get_shortest_str_with_all_chars("abcdedbc", {'b', 'c'}))
+    print(get_shortest_str_with_all_chars("abcdecdb", {'b', 'c'}))
+    print(get_shortest_str_with_all_chars("abcdecdb", {'b', 'c', 'e'}))
+    print(get_shortest_str_with_all_chars("abcdecdb", {'x', 'y', 'z'}))
