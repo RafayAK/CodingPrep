@@ -9,21 +9,21 @@ If there is no substring containing all the characters in the set, return null.
 """
 
 def get_shortest_str_with_all_chars(string, chars):
-    # add all the chars to a set
+    if chars.issubset(set(string)):
+        left = get_shortest_str_with_all_chars(string[1:], chars)
+        right = get_shortest_str_with_all_chars(string[:-1], chars)
 
-    start, end = 0, len(string)
+        if left and right:
+            return left if len(left) < len(right) else right
+        elif left:
+            return left
+        elif right:
+            return right
+        else:
+            return string
 
-    while chars.issubset(set(string[start: end])):
-        temp = set(string[start: end])
-        start += 1
+    return None
 
-    while chars.issubset(set(string[start: end])):
-        temp = set(string[start: end])
-        end += -1
-
-
-
-    return string[start-1: end]
 
 
 if __name__ == '__main__':
