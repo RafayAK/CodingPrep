@@ -6,6 +6,7 @@ Determine whether a doubly linked list is a palindrome. What if it’s singly li
 
 For example, 1 -> 4 -> 3 -> 4 -> 1 returns True while 1 -> 4 returns False."""
 
+# works for both singly and doubly linked lists
 
 class LinkedList:
     def __init__(self, data, nxt=None):
