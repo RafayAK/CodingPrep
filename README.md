@@ -116,6 +116,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 102](DailyCodingProblem/102_Lyft_Contiguous_Elements_Sum_to_K.py)
 - [Daily Coding problem # 103](DailyCodingProblem/103_Square_Return_Shortest_Substr_Containing_All_Chars.py)
 - [Daily Coding problem # 104](DailyCodingProblem/104_Google_Is_Doubly_LinkedList_Palindrome.py)
+- [Daily Coding problem # 105](DailyCodingProblem/105_Facebook_Debounce_function.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
