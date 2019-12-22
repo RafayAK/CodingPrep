@@ -49,8 +49,9 @@ def print_symbol(symbol):
 
 if __name__ == '__main__':
 
-    # so the star function will be called after its not being pinned anymore, it will use the latest call, no queuing
-    # of calls
+    # so the print_symbol function will be executed after its not being called anymore,
+    # it will use the latest call
+
     for _ in range(20):
         print_symbol("*")
         print("-", end="")
