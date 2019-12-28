@@ -53,7 +53,7 @@ def find_intersection(list1, list2):# O(M*K)
 
 
 def find_intersection_2(list1, list2):# O(M+K)
-    #  idea store pointer values to a dictionar
+    #  idea store pointer values to a dictionary
     # return when match found
     dict_visited = {}  # dict of visited nodes
 
