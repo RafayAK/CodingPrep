@@ -115,22 +115,22 @@ if __name__ == '__main__':
     h.add_node(i)
     h.add_node(j)
 
-    print(find_lowest_common_ancestor(b, d))
-    print(find_lowest_common_ancestor(a, b))
-    print(find_lowest_common_ancestor(c, b))
-    print(find_lowest_common_ancestor(g, e))
+    print(find_lowest_common_ancestor(b, d))  # 5
+    print(find_lowest_common_ancestor(a, b))  # 5
+    print(find_lowest_common_ancestor(c, b))  # 4
+    print(find_lowest_common_ancestor(g, e))  # 6
 
 
     print("\n\n")
 
-    print(find_lowest_common_ancestor_redux(a,b, d))
-    print(find_lowest_common_ancestor_redux(a,a, b))
-    print(find_lowest_common_ancestor_redux(a,c, b))
-    print(find_lowest_common_ancestor_redux(a,g, e))
+    print(find_lowest_common_ancestor_redux(a,b, d))  # 5
+    print(find_lowest_common_ancestor_redux(a,a, b))  # 5
+    print(find_lowest_common_ancestor_redux(a,c, b))  # 4
+    print(find_lowest_common_ancestor_redux(a,g, e))  # 6
 
     print("\n\n")
 
-    print(find_lowest_common_ancestor_redux_redux(b, d))
-    print(find_lowest_common_ancestor_redux_redux(a, b))
-    print(find_lowest_common_ancestor_redux_redux(c, b))
-    print(find_lowest_common_ancestor_redux_redux(g, e))
+    print(find_lowest_common_ancestor_redux_redux(b, d))  # 5
+    print(find_lowest_common_ancestor_redux_redux(a, b))  # 5
+    print(find_lowest_common_ancestor_redux_redux(c, b))  # 4
+    print(find_lowest_common_ancestor_redux_redux(g, e))  # 6
