@@ -13,7 +13,7 @@ longest_substring('edabccccdccba', 3)  # 'bccccdccb'
 '''
 
 from collections import deque
-
+# caterpillar method better implementation
 def longest_substring(string, k):
     substring = deque()
     len_longest_substr = 0
@@ -28,11 +28,23 @@ def longest_substring(string, k):
                 if len(substring) > len_longest_substr:
                     len_longest_substr = len(substring)
             elif len(set(substring)) > k:
-                substring.popleft()
+                while len(set(substring)) > k:
+                    substring.popleft()
             idx+=1
     return len_longest_substr
+
+# recursive implementation pretty poor run-time though
+def longest_substring_redux(string, k):
+    def helper(char_list):
+        if len(set(char_list)) == k:
+            return char_list
+
+        return max(helper(char_list[1:]), helper(char_list[:len(char_list)-1]), key=len)
+
+    return "".join(helper([s for s in string]))
 
 
 if __name__ == '__main__':
     string = 'edabccccdccba'
     print(longest_substring(string,3))
+    print(longest_substring_redux(string, 3))
