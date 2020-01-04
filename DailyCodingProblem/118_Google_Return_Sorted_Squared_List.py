@@ -10,8 +10,8 @@ For example, given [-9, -2, 0, 2, 3], return [0, 4, 4, 9, 81].
 def sorted_squared_list(sorted_numbers):
     stack = []
     res = []
-    for num in reversed(sorted_numbers):
-        if num > 0:
+    for num in sorted_numbers:# reversed(sorted_numbers):
+        if num < 0:
             stack.insert(0, num**2)
         else:
             while len(stack) > 0 and num**2 >= stack[0]:
