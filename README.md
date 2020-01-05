@@ -130,6 +130,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 116](DailyCodingProblem/116_JaneStreet_Generate_Unbounded_Tree_In_Constant_Time.py)
 - [Daily Coding problem # 117](DailyCodingProblem/117_Facebook_Return_Tree_Level_With_Min_Sum.py)
 - [Daily Coding problem # 118](DailyCodingProblem/118_Google_Return_Sorted_Squared_List.py)
+- [Daily Coding problem # 119](DailyCodingProblem/119_Google_Find_Smallest_Set_of_Numbers_That_Covers_All_Intervals.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
