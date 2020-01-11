@@ -18,14 +18,17 @@ And here are examples of non-numbers:
     - "-"
 """
 
-def is_num(string):
-    a = 0
-    try:
-        a = float(string)
-    except ValueError:
-        return False
-
-    return True
+# Solution:
+# 1 - A positive integer contains only digits
+# 2 - A negative integer starts with '-' and the rest are positive integers
+# 3 - A positive decimal contains one "." and the substrings before and after '.'
+#     are positive
+# 4 - A negative decimal starts with '-' and rest is positive decimal
+# 5 - A positive number can be either a positive integer or decimal
+# 6 - A negative number can be either a negative integer or decimal
+# 7 - A scientific number can be contains one 'e' and the substring before and after e'
+#     are either a positive or a negative number
+# 8 - Finally, a number can be either a positive number, a negative number or a scientific number
 
 
 def is_num_redux(string:str):
