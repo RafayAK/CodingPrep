@@ -22,6 +22,12 @@ def rounds_until_one(coins):
     print("     {0} coins on round {1}".format(coins, round_number))
     return round_number
 
+import math
+
+def rounds_until_one_redux(coins):
+    if coins<1:
+        return None
+    return math.floor(math.log2(coins))
 
 
 if __name__ == '__main__':
@@ -29,4 +35,9 @@ if __name__ == '__main__':
 
     for c in coins:
         print("Number of rounds played: {}".format(rounds_until_one(c)))
+
+    print("------------------")
+    for c in coins:
+        print("Number of rounds played: {}".format(rounds_until_one_redux(c)))
+
 
