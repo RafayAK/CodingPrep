@@ -15,6 +15,7 @@ def rounds_until_one(coins):
         return None
 
     if coins == 1:
+        print("     {0} coins on round {1}".format(coins, 0))
         return 0
 
     round_number = rounds_until_one(coins//2) + 1
@@ -24,7 +25,7 @@ def rounds_until_one(coins):
 
 
 if __name__ == '__main__':
-    coins = [100, 50, 25, 0, -1]
+    coins = [4, 100, 50, 25, 0, -1]
 
     for c in coins:
         print("Number of rounds played: {}".format(rounds_until_one(c)))
