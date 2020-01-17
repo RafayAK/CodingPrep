@@ -7,3 +7,13 @@ Write a function that rotates a list by k elements. For example, [1, 2, 3, 4, 5,
 two becomes [3, 4, 5, 6, 1, 2]. Try solving this without creating a copy of the list.
 How many swap or move operations do you need?
 """
+
+def roate_list(list, k):
+    list = list[k:] + list[:k]
+
+    return list
+
+
+if __name__ == '__main__':
+    list = [1, 2, 3, 4, 5, 6]
+    print(roate_list(list, 6))
