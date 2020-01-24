@@ -31,10 +31,11 @@ class hanoi:
         self.peg_2 = []  # stack 2
         self.peg_3 = []  # stack 3
         self.moves = []
+        self.num_of_disks = 0
 
     def add_discs(self, n):
         # add all the discs to peg_1
-
+        self.num_of_disks = n
         for i in range(1, n + 1):
             self.peg_1.append(i)
 
@@ -50,10 +51,14 @@ class hanoi:
                 new_state = deepcopy(self)
                 disk = new_state.peg_1.pop(0)  # pick up disk
                 new_state.peg_2.insert(0, disk)
+                new_state.moves.append('Move {} to 2'.format(disk))
+                new_game_states.append(new_state)
             if len(self.peg_3) == 0 or self.peg_3[0] > disk:
                 new_state = deepcopy(self)
                 disk = new_state.peg_1.pop(0)  # pick up disk
+                new_state.moves.append('Move {} to 3'.format(disk))
                 new_state.peg_3.insert(0, disk)
+                new_game_states.append(new_state)
 
         # see if discs from peg_2 can be moved:
         if self.peg_2:
@@ -64,37 +69,60 @@ class hanoi:
                 new_state = deepcopy(self)
                 disk = new_state.peg_2.pop(0)  # pick up disk
                 new_state.peg_1.insert(0, disk)
+                new_state.moves.append('Move {} to 1'.format(disk))
+                new_game_states.append(new_state)
             if len(self.peg_3) == 0 or self.peg_3[0] > disk:
                 new_state = deepcopy(self)
                 disk = new_state.peg_2.pop(0)  # pick up disk
                 new_state.peg_3.insert(0, disk)
+                new_state.moves.append('Move {} to 3'.format(disk))
+                new_game_states.append(new_state)
 
         # see if discs from peg_3 can be moved:
         if self.peg_3:
             # pick first disk:
-            disk = self.peg_2[0]
+            disk = self.peg_3[0]
             # see if it can be moved to other two pegs
             if len(self.peg_1) == 0 or self.peg_1[0] > disk:
                 new_state = deepcopy(self)
-                disk = new_state.peg_2.pop(0)  # pick up disk
+                disk = new_state.peg_3.pop(0)  # pick up disk
                 new_state.peg_1.insert(0, disk)
-            if len(self.peg_3) == 0 or self.peg_3[0] > disk:
+                new_state.moves.append('Move {} to 1'.format(disk))
+                new_game_states.append(new_state)
+            if len(self.peg_2) == 0 or self.peg_2[0] > disk:
                 new_state = deepcopy(self)
-                disk = new_state.peg_2.pop(0)  # pick up disk
-                new_state.peg_3.insert(0, disk)
+                disk = new_state.peg_3.pop(0)  # pick up disk
+                new_state.peg_2.insert(0, disk)
+                new_state.moves.append('Move {} to 2'.format(disk))
+                new_game_states.append(new_state)
+
+        return new_game_states
+
+
+    def solved(self):
+        if len(self.peg_3) == self.num_of_disks:
+            return True
 
     def __repr__(self):
         return "1:{}    , 2: {},    3:{}".format(self.peg_1, self.peg_2, self.peg_3)
 
 
 
-def solve_hanoi(n):
-    game = hanoi()
-    game.add_discs(n)
-
+def solve_hanoi(game):
     queue = []
     queue.append(game)
 
     while queue:
+        # print(len(queue))
         curr_game_state = queue.pop(0)
-        execute_move(curr_game_state)
+        if curr_game_state.solved():
+            for move in curr_game_state.moves:
+                print(move)
+            return  # all done
+
+        queue.extend(curr_game_state.execute_move())
+
+if __name__ == '__main__':
+    puzzle = hanoi()
+    puzzle.add_discs(n=3)
+    solve_hanoi(puzzle)
