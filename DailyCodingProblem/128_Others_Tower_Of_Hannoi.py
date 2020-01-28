@@ -122,7 +122,38 @@ def solve_hanoi(game):
 
         queue.extend(curr_game_state.execute_move())
 
+
+# --------------------
+
+class Towers:
+    peg_1 = 1
+    peg_2 = 2
+    peg_3 = 3
+
+def solve_hanoi_redux(disks,source, inter, dest):
+    if disks == 1:
+        print("Move {} to {}".format(disks, dest))
+    else:
+        solve_hanoi_redux(disks-1, source, dest, inter)
+        print("Move {} to {}".format(disks, dest))
+        solve_hanoi_redux(disks-1, inter, source, dest)
+
+
+
 if __name__ == '__main__':
-    puzzle = hanoi()
-    puzzle.add_discs(n=3)
-    solve_hanoi(puzzle)
+    # puzzle = hanoi()
+    # puzzle.add_discs(n=3)
+    # solve_hanoi(puzzle)
+    #
+    # print("\n------\n")
+    # puzzle = hanoi()
+    # puzzle.add_discs(n=2)
+    # solve_hanoi(puzzle)
+    print("Disks=3")
+    solve_hanoi_redux(3, Towers.peg_1, Towers.peg_2, Towers.peg_3)
+    print('-------------')
+    print("Disks=4")
+    solve_hanoi_redux(4, Towers.peg_1, Towers.peg_2, Towers.peg_3)
+    print('-------------')
+    print("Disks=5")
+    solve_hanoi_redux(5, Towers.peg_1, Towers.peg_2, Towers.peg_3)
