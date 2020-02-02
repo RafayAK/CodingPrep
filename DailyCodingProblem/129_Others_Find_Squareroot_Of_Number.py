@@ -3,25 +3,28 @@ Given a real number n, find the square root of n. For example, given n = 9, retu
 
 """
 
-def get_square_root(num):
-    # returns square root to 4 dp
 
-    def increment_root(root_num:str, pos:float):
-        return str(float(root_num) + pos)
+def get_square_root(num, error= 0.00001):
+    # binary search over the possible range:
+    # -> if guess is high move 'hi' down to guess
+    # -> if guess is low move 'lo' up to guess
 
-    def decrement_root(root_num:str, pos:float)
-        return str(float(root_num) - pos)
+    lo, hi = 0, num
 
-    root_num = str(num // 2)
-    pos = 1.0
+    guess = (lo + hi) / 2.0
 
-    while len(root_num.split('.')[1]) != 4:
-        if float(root_num) ** 2 == num:
-            return float(root_num)
-        elif float(root_num) ** 2 > num:
-            root_num = increment_root(root_num, pos)
+    while abs(guess**2 - num) >= error:
+        if guess ** 2 > num:
+            hi = guess
         else:
-            # decrement root
-            root_num = decrement_root(root_num, pos)
+            lo = guess
 
-    return float(root_num)
+        guess = (lo + hi) / 2.0
+
+    return guess
+
+
+
+if __name__ == '__main__':
+    print(get_square_root(9))
+
