@@ -24,7 +24,16 @@ def get_square_root(num, error= 0.00001):
     return guess
 
 
+def get_square_root_redux(num, error=0.00001):
+    # Heron of Alexandria's Method https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method
+    guess = 1.0
+
+    while abs(guess**2 - num) >= error:
+        guess = (1/2) * (guess + (num/guess))
+
+    return guess
 
 if __name__ == '__main__':
     print(get_square_root(9))
+    print(get_square_root_redux(9))
 
