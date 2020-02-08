@@ -143,6 +143,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 129](DailyCodingProblem/129_Others_Find_Squareroot_Of_Number.py)
 - [Daily Coding problem # 130](DailyCodingProblem/130_Facebook_Buy_Sell_Stock.py)
 - [Daily Coding problem # 131](DailyCodingProblem/131_Snapchat_Clone_LinkedList_with_random_pointers.py)
+- [Daily Coding problem # 132](DailyCodingProblem/132_RiotGames_Design_HitCounter.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
