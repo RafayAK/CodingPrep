@@ -28,8 +28,27 @@ class HitCounter:
         return sum(self.hit_list[self.hit_time_stamp[lower]:self.hit_time_stamp[upper]+1])
 
 
+# improved HitCounter, uses less memory
+
+class HitCounterRedux:
+    def __init__(self):
+        self.hit_time_stamp = {}  # dict to store time_stamp: total hits up till that point
+        # self.hit_list = []  # to store hits for each time_stamp
+        self.hit_counter = 0
+
+    def record(self, timestamp):
+        self.hit_counter += 1
+        self.hit_time_stamp[timestamp] = self.hit_counter
+
+    def total(self):
+        return self.hit_counter
+
+    def range(self, lower, upper):
+        return self.hit_time_stamp[upper] - self.hit_time_stamp[lower] + 1
+
+
 if __name__ == '__main__':
-    player = HitCounter()
+    player = HitCounterRedux() # HitCounter()
 
     first = time.time()
     last = None
