@@ -144,6 +144,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 130](DailyCodingProblem/130_Facebook_Buy_Sell_Stock.py)
 - [Daily Coding problem # 131](DailyCodingProblem/131_Snapchat_Clone_LinkedList_with_random_pointers.py)
 - [Daily Coding problem # 132](DailyCodingProblem/132_RiotGames_Design_HitCounter.py)
+- [Daily Coding problem # 133](DailyCodingProblem/133_Amazon_Find_Inorder_Successor_In_BST.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
