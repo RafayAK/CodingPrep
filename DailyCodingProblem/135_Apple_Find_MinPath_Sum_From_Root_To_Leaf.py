@@ -21,6 +21,28 @@ class Node:
         self.right = right
 
 def get_min_path(root):
+    """
+    Finds the min path from root to leaf node in a binary tree
+
+    Args:
+        root: Root of the tree
+
+    Returns: "min_path" -> the path with minimum sum from root to leaf
+
+    >>> tree = Node(10,\
+                left=Node(5,\
+                          right=Node(2)),\
+                right=Node(5,\
+                           right=Node(1,\
+                                      left=Node(-1))))
+    >>> print(get_min_path(tree))
+    [10, 5, 1, -1]
+    >>> tree = Node(-1)
+    >>> print(get_min_path(tree))
+    [-1]
+
+    """
+
     min_sum = float('inf')
     min_path = []
 
@@ -41,9 +63,13 @@ def get_min_path(root):
     return min_path
 
 if __name__ == '__main__':
-    tree = Node(10,
-                left=Node(5, right=Node(2)),
-                right=Node(5,
-                           right=Node(1, left=Node(-1))))
+    import doctest
+    doctest.testmod()
 
-    print(get_min_path(tree))
+    tree = Node(10,
+                left=Node(5,
+                          right=Node(2)),
+                right=Node(5,
+                           right=Node(1,
+                                      left=Node(-1))))
+
