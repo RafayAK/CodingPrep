@@ -148,6 +148,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 134](DailyCodingProblem/134_Facebook_Implement_SparseArray.py)
 - [Daily Coding problem # 135](DailyCodingProblem/135_Apple_Find_MinPath_Sum_From_Root_To_Leaf.py)
 - [Daily Coding problem # 136](DailyCodingProblem/136_Google_Find_largest_Rect_In_Bianry_Matrix.py)
+- [Daily Coding problem # 137](DailyCodingProblem/137_Amazon_Implement_Bit_Array.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
