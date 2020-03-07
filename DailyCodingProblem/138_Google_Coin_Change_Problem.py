@@ -9,6 +9,7 @@ For example, given n = 16, return 3 since we can make it with a 10¢, a 5¢, and
 """
 
 # classic dynamic programming problem
+# https://en.wikipedia.org/wiki/Change-making_problem#Methods_of_solving
 
 def _get_change_making_matrix(set_of_coins, total:int):
     # create a zeros matrix where rows go from 0->number_of_denominations and
@@ -37,8 +38,6 @@ def _get_coins_from_mat(mat, n, denominations):
             curr_col = n
 
     return coins
-
-
 
 
 def min_coins_required(coins:list, n:int):
