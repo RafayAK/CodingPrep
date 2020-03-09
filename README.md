@@ -149,6 +149,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 135](DailyCodingProblem/135_Apple_Find_MinPath_Sum_From_Root_To_Leaf.py)
 - [Daily Coding problem # 136](DailyCodingProblem/136_Google_Find_largest_Rect_In_Bianry_Matrix.py)
 - [Daily Coding problem # 137](DailyCodingProblem/137_Amazon_Implement_Bit_Array.py)
+- [Daily Coding problem # 138](DailyCodingProblem/138_Google_Coin_Change_Problem.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
@@ -183,6 +184,11 @@ Pull requests are welcome, if you want to improve my implementation
 - [Inserting a Node Into a Sorted Doubly Linked List](LinkedList_InsertNodeInSortedDoublyLinkedList.py)- *Full question can be found [here](https://www.hackerrank.com/challenges/insert-a-node-into-a-sorted-doubly-linked-list/problem)*
 - [Find Merge Point of Two Lists](LinkedLists_FindMergePointOfTwoLists.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/find-the-merge-point-of-two-joined-linked-lists/problem)*
 - [Reverse a doubly linked list](LinkedLists_ReveserseDoublyLinkedList.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list/problem)*
+
+
+## CODE SIGNAL
+- [Check Palindrome](CodeSignal/check_palindrome.py)
+
 
 ## LeetCode
 [Largest Numbers](largest_number.py) - *Full question can be found [here](https://leetcode.com/problems/largest-number)*
