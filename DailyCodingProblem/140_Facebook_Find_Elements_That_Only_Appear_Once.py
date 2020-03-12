@@ -11,21 +11,14 @@ Follow-up: Can you do this in linear time and constant space?
 
 
 def occur_once(array):
+    xored_sum = array[0]
 
-    for i in range(len(array)):
-        if i % 2 != 0:
-            array[i] = - array[i]
-
-    s = sum(array)
-    b = 0
-    for i in array:
-        b += i
+    for num in array[1:]:
+        xored_sum = xored_sum ^ num
 
     for num in array:
-        if s - num in array:
-            return num, s-num
-
-    return None
+        if xored_sum ^ num in array:
+            return xored_sum ^ num , num
 
 if __name__ == '__main__':
     print(occur_once([2, 4, 6, 8, 10, 2, 6, 10]))
