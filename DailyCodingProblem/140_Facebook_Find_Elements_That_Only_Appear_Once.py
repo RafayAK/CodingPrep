@@ -29,7 +29,8 @@ def occur_once(array):
     # find the MSB from the right:
     msb = xored_sum & (xored_sum-1)
 
-    # res_1 by the end will contain the number from group 2 that satisfies the condition, similarly res_2 will contain the number from group 2
+    # res_1 by the end will contain the number from group 2 that satisfies the condition,
+    # similarly res_2 will contain the number from group 2
     res_1, res_2 = 0, 0
     for num in array:
         if num & msb == 0:
