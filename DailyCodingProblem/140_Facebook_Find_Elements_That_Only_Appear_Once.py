@@ -16,9 +16,10 @@ def occur_once(array):
     for num in array[1:]:
         xored_sum = xored_sum ^ num
 
+    # Todo: make this O(n) currently O(n^2)
     for num in array:
         if xored_sum ^ num in array:
-            return xored_sum ^ num , num
+            return xored_sum ^ num, num
 
 if __name__ == '__main__':
     print(occur_once([2, 4, 6, 8, 10, 2, 6, 10]))
