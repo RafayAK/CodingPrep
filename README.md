@@ -155,6 +155,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 141](DailyCodingProblem/141_Microsoft_3_stacks_using_single_list.py)
 - [Daily Coding problem # 142](DailyCodingProblem/142_Google_balanced_parentheses.py)
 - [Daily Coding problem # 143](DailyCodingProblem/143_Amazon_Given_Pivot_Partition_List_into_Three.py)
+- [Daily Coding problem # 144](DailyCodingProblem/144_Google_Nearest_Largest_Number_From_Index_i.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
