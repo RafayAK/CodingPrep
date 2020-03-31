@@ -39,7 +39,26 @@ def index_of_nearest_larger_num(arr, index):
         return right_index
 
 
+# A more elegant O(n) solution
+def index_of_nearest_larger_num_redux(arr, index):
+    for i in range(1, len(arr)):
+        left = index - i
+        right = index + i
+
+        if left >= 0 and arr[left] > arr[index]:
+            return arr[left], left
+        if right < len(arr) and arr[right] > arr[index]:
+            return arr[right], right
+
+    return None
+
+
+
 if __name__ == '__main__':
-    print(index_of_nearest_larger_num([4, 1, 3, 5, 6], 0))
-    print(index_of_nearest_larger_num([4, 1, 3, 5, 6], 1))
-    print(index_of_nearest_larger_num([4, 1, 3, 5, 6], 4))
+    # print(index_of_nearest_larger_num([4, 1, 3, 5, 6], 0))
+    # print(index_of_nearest_larger_num([4, 1, 3, 5, 6], 1))
+    # print(index_of_nearest_larger_num([4, 1, 3, 5, 6], 4))
+
+    print(index_of_nearest_larger_num_redux([4, 1, 3, 5, 6], 0))
+    print(index_of_nearest_larger_num_redux([4, 1, 3, 5, 6], 1))
+    print(index_of_nearest_larger_num_redux([4, 1, 3, 5, 6], 4))
