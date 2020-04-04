@@ -53,6 +53,32 @@ def index_of_nearest_larger_num_redux(arr, index):
     return None
 
 
+def preprocess(arr):
+    cache = [None for _ in range(len(arr))]
+
+    for j in range(len(arr) -1):
+        if arr[j] > arr[j +1]:
+            cache[j + 1] =j
+        elif arr[j +1] > arr[j]:
+            cache[j] = j+1
+
+    return cache
+
+def get_mapping_indices(arr):
+    nl_indices = dict()
+    sorted_tuples = [(x, i) for i, x in enumerate(arr)]
+    sorted_tuples.sort(key=lambda x: x[0])
+
+    for k, (_, i) in enumerate(sorted_tuples[:-1]):
+        min_dist = len(arr)
+        for m in range(k + 1, len(sorted_tuples)):
+            dist = abs(i - sorted_tuples[m][1])
+            if dist < min_dist:
+                min_dist = dist
+                nl_indices[i] = sorted_tuples[m][1]
+
+    return nl_indices
+
 
 if __name__ == '__main__':
     # print(index_of_nearest_larger_num([4, 1, 3, 5, 6], 0))
@@ -62,3 +88,7 @@ if __name__ == '__main__':
     print(index_of_nearest_larger_num_redux([4, 1, 3, 5, 6], 0))
     print(index_of_nearest_larger_num_redux([4, 1, 3, 5, 6], 1))
     print(index_of_nearest_larger_num_redux([4, 1, 3, 5, 6], 4))
+
+    # print(preprocess([4, 1, 3, 5, 6]))
+    # print(preprocess([1, 1, 1, 4, 3, 3]))
+    print(get_mapping_indices([4, 1, 3, 5, 6]))
