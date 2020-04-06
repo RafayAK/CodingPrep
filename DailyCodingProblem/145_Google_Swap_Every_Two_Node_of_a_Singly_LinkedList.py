@@ -19,6 +19,7 @@ class Node:
     def __repr__(self):
         return "{}->{}".format(self.data, self.nxt)
 
+
 def swap_every_two(ll):
     head = None
     i = None
@@ -41,19 +42,32 @@ def swap_every_two(ll):
     return head
 
 
+# more elegant solution swap the values instead of entire nodes
+def swap_every_two_redux(ll):
+    curr = ll
+
+    while curr and curr.nxt:
+        curr.data, curr.nxt.data = curr.nxt.data, curr.data
+        curr = curr.nxt.nxt
+
+    return ll
+
+
 if __name__ == '__main__':
     print('\n ----- Test-1 -----\n')
     ll = Node(1, nxt=Node(2, nxt=Node(3, nxt=Node(4))))
 
     print("Original:", ll)
-    ll = swap_every_two(ll)
+    # ll = swap_every_two(ll)
+    ll = swap_every_two_redux(ll)
     print("Swapped:", ll)
 
     print('\n ----- Test-2 -----\n')
 
     ll = Node(1, nxt=Node(2, nxt=Node(3)))
     print("Original:", ll)
-    ll = swap_every_two(ll)
+    # ll = swap_every_two(ll)
+    ll = swap_every_two_redux(ll)
     print("Swapped:", ll)
 
 
@@ -61,5 +75,6 @@ if __name__ == '__main__':
 
     ll = ll = Node(1, nxt=Node(2, nxt=Node(3, nxt=Node(4, nxt=Node(5)))))
     print("Original:", ll)
-    ll = swap_every_two(ll)
+    # ll = swap_every_two(ll)
+    ll = swap_every_two_redux(ll)
     print("Swapped:", ll)
