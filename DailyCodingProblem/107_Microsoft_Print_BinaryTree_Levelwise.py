@@ -35,6 +35,7 @@ def print_level_wise(root, l=0, nodes=None):
     return nodes
 
 
+# recommended solution
 from queue import Queue
 def print_level_wise_redux(root):
     queue = Queue()
