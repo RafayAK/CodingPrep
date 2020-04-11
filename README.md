@@ -159,6 +159,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 145](DailyCodingProblem/145_Google_Swap_Every_Two_Node_of_a_Singly_LinkedList.py)
 - [Daily Coding problem # 146](DailyCodingProblem/146_BufferBox_Prune_BinaryTree.py)
 - [Daily Coding problem # 147](DailyCodingProblem/147_Others_Sort_List_Using_Given_Reverse_Method.py)
+- [Daily Coding problem # 148](DailyCodingProblem/148_Apple_Gray_Code.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
