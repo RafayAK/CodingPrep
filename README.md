@@ -161,6 +161,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 147](DailyCodingProblem/147_Others_Sort_List_Using_Given_Reverse_Method.py)
 - [Daily Coding problem # 148](DailyCodingProblem/148_Apple_Gray_Code.py)
 - [Daily Coding problem # 149](DailyCodingProblem/149_GoldmanSachs_Sum_Sublist.py)
+- [Daily Coding problem # 150](DailyCodingProblem/150_LinkedIn_Nearest_K_Points_From_Cerntral_Point.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
