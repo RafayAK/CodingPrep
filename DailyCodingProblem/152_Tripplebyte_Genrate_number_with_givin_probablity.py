@@ -9,3 +9,4 @@ your function should return 1 10% of the time, 2 50% of the time, and 3 and 4 20
 
 You can generate random numbers between 0 and 1 uniformly.
 """
+# can do it when static but how to scale it?
