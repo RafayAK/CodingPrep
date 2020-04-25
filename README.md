@@ -163,6 +163,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 149](DailyCodingProblem/149_GoldmanSachs_Sum_Sublist.py)
 - [Daily Coding problem # 150](DailyCodingProblem/150_LinkedIn_Nearest_K_Points_From_Cerntral_Point.py)
 - [Daily Coding problem # 151](DailyCodingProblem/151_Others_Change_Pixel_Values.py) 
+- [Daily Coding problem # 152](DailyCodingProblem/152_Tripplebyte_Genrate_number_with_givin_probablity.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
