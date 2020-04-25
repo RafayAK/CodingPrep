@@ -46,6 +46,7 @@ class NumGenerator:
 
 
 if __name__ == '__main__':
+    # Test 1
     nums = [1, 2, 3, 4]
     probs =  [0.1, 0.5, 0.2, 0.2]
     test = NumGenerator(nums, probs)
@@ -61,7 +62,7 @@ if __name__ == '__main__':
         print("{}: {:.2f}".format(k, v/num_iterations))
 
     print("---------")
-
+    # Test 2
     nums = [1, 2, 3, 4, 6]
     probs = [0.1, 0.3, 0.2, 0.2, 0.2]
     test = NumGenerator(nums, probs)
@@ -78,7 +79,7 @@ if __name__ == '__main__':
         print("{}: {:.2f}".format(k, v / num_iterations))
 
     print("---------")
-
+    # Test 3
     nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     probs = [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
     test = NumGenerator(nums, probs)
