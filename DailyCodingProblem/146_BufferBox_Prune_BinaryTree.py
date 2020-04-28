@@ -73,6 +73,17 @@ def prune(root):
     helper(root)
     return root
 
+def prune_redux(root):
+    if root is None:
+        return None
+
+    root.left, root.right = prune_redux(root.left), prune_redux(root.right)
+
+    if root.left is None and root.right is None and root.data ==0:
+        return None
+    return root
+
+
 if __name__ == '__main__':
     tree = Node(0,
                 left=Node(1),
@@ -82,6 +93,17 @@ if __name__ == '__main__':
 
     print(*print_level_wise(tree), sep='\n')
     tree = prune(root=tree)
+    print("---"*3)
+    print(*print_level_wise(tree), sep='\n')
+    print("===" * 3)
+    tree = Node(0,
+                left=Node(1),
+                right=Node(0,
+                           left=Node(1, left=Node(0), right=Node(0)),
+                           right=Node(0)))
+
+    print(*print_level_wise(tree), sep='\n')
+    tree = prune_redux(root=tree)
     print("---"*3)
     print(*print_level_wise(tree), sep='\n')
 
