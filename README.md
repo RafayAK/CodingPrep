@@ -165,6 +165,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 151](DailyCodingProblem/151_Others_Change_Pixel_Values.py) 
 - [Daily Coding problem # 152](DailyCodingProblem/152_Tripplebyte_Genrate_number_with_givin_probablity.py)
 - [Daily Coding problem # 153](DailyCodingProblem/153_Othes_Find_Distance_between_Two_Words_In_a_String.py)
+- [Daily Coding problem # 154](DailyCodingProblem/154_Amazon_Implement_Stack.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
