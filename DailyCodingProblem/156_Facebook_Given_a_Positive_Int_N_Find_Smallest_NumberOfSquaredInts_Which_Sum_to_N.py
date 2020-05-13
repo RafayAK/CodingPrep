@@ -11,27 +11,24 @@ Given n = 27, return 3 since 27 = 3^2 + 3^2 + 3^2 = 9 + 9 + 9.
 """
 
 
-def squared_sum_to_n(n:int):
-    num_list = []
-    def helper(num, upto=None):
-        guess = 0
+def squared_sum_to_n(n:int, curr_ele=None):
+    if curr_ele is None:
+        curr_ele = []
+    if n == 0:
+        return 0, curr_ele
 
-        for guess in range(1, upto):
-            if num - guess**2 < 0:
-                break
+    min_num_squares = float('inf')
+    min_elements = []
+    i = 1
+    while n - i**2 >=0:
+        new_min, min_elements = squared_sum_to_n(n-i**2, curr_ele+[i])
+        if new_min < min_num_squares:
+            min_num_squares = new_min+1
+            min_elements = min_elements
 
-        if guess - 1 == 0:
-            num_list.clear()
-            helper(num, upto-1)
-        else:
-            new_num = num - (guess -1)**2
-            if new_num == 0:
-                return
-            num_list.append(guess-1)
-            helper(new_num, new_num)
+        i +=1
 
-    helper(n, n)
-    return num_list
+    return min_num_squares, min_elements
 
 if __name__ == "__main__":
     print(squared_sum_to_n(13))
