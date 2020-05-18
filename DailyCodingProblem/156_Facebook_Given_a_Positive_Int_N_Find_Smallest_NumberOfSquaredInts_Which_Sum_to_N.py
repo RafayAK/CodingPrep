@@ -10,7 +10,7 @@ For example, given n = 13, return 2 since 13 = 3^2 + 2^2 = 9 + 4.
 Given n = 27, return 3 since 27 = 3^2 + 3^2 + 3^2 = 9 + 9 + 9.
 """
 
-
+# exponential time algo, O(n^n), pretty poor Rafay boy!
 def squared_sum_to_n(n:int, curr_ele=None):
     if curr_ele is None:
         curr_ele = []
