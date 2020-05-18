@@ -14,23 +14,28 @@ Given n = 27, return 3 since 27 = 3^2 + 3^2 + 3^2 = 9 + 9 + 9.
 def squared_sum_to_n(n:int, curr_ele=None):
     if curr_ele is None:
         curr_ele = []
+
     if n == 0:
-        return 0, curr_ele
+        return len(curr_ele), curr_ele
 
-    min_num_squares = float('inf')
+    min_sum_squares = float("inf")
     min_elements = []
-    i = 1
-    while n - i**2 >=0:
-        new_min, min_elements = squared_sum_to_n(n-i**2, curr_ele+[i])
-        if new_min < min_num_squares:
-            min_num_squares = new_min+1
-            min_elements = min_elements
+    num = 1
 
-        i +=1
+    while num**2 <= n:
+        new_min, new_min_elements = squared_sum_to_n(n - num**2, curr_ele + [num])
 
-    return min_num_squares, min_elements
+        if new_min < min_sum_squares:
+            min_sum_squares = new_min
+            min_elements = new_min_elements
+
+        num += 1
+    return min_sum_squares, min_elements
 
 if __name__ == "__main__":
-    print(squared_sum_to_n(13))
-    # print(squared_sum_to_n(3))
-    print(squared_sum_to_n(27))
+    print("3: {}".format(squared_sum_to_n(3)))
+    print("4: {}".format(squared_sum_to_n(4)))
+    print("7: {}".format(squared_sum_to_n(7)))
+    print("13: {}".format(squared_sum_to_n(13)))
+    print("9: {}".format(squared_sum_to_n(9)))
+    print("27: {}".format(squared_sum_to_n(27)))
