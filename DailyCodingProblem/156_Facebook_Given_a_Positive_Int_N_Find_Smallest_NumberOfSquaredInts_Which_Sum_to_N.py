@@ -32,10 +32,38 @@ def squared_sum_to_n(n:int, curr_ele=None):
         num += 1
     return min_sum_squares, min_elements
 
+# aah much better using dynamic programming
+# O(n^2)
+def squared_sum_to_n_redux(n:int):
+    # create cache map for all the min sum from 0 to n inclusive
+    # initially set all to inf
+    min_sum_map = [float("inf") for i in range(n+1)]
+
+    # the min sum for the 0th element to 0
+    min_sum_map[0] = 0
+
+    # iterate over nums from 1 to n and compute the min sum required for each
+    for num in range(1, n+1):
+        # start building min sum by removing squares starting form 1
+        j = 1
+        while j**2 <= num:
+            # iteratively check of new min by removing a squared number form num
+            min_sum_map[num] = min(min_sum_map[num], min_sum_map[num-j**2]+1)
+            j += 1
+    return min_sum_map[n]
+
+
 if __name__ == "__main__":
-    print("3: {}".format(squared_sum_to_n(3)))
-    print("4: {}".format(squared_sum_to_n(4)))
-    print("7: {}".format(squared_sum_to_n(7)))
-    print("13: {}".format(squared_sum_to_n(13)))
-    print("9: {}".format(squared_sum_to_n(9)))
-    print("27: {}".format(squared_sum_to_n(27)))
+    # print("3: {}".format(squared_sum_to_n(3)))
+    # print("4: {}".format(squared_sum_to_n(4)))
+    # print("7: {}".format(squared_sum_to_n(7)))
+    # print("13: {}".format(squared_sum_to_n(13)))
+    # print("9: {}".format(squared_sum_to_n(9)))
+    # print("27: {}".format(squared_sum_to_n(27)))
+
+    print("3: {}".format(squared_sum_to_n_redux(3)))
+    print("4: {}".format(squared_sum_to_n_redux(4)))
+    print("7: {}".format(squared_sum_to_n_redux(7)))
+    print("13: {}".format(squared_sum_to_n_redux(13)))
+    print("9: {}".format(squared_sum_to_n_redux(9)))
+    print("27: {}".format(squared_sum_to_n_redux(27)))
