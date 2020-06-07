@@ -38,7 +38,7 @@ def count_in_table(table_size, X):
             continue
 
         if X % i == 0 and X/i <= table_size:
-            if i == X/i:  # if same factor eg 25 =5 *
+            if i == X/i:  # if same factor eg 25 = 5 * 5
                 count += 1
             else:
                 count += 2
