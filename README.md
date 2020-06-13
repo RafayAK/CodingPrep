@@ -171,6 +171,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 157](DailyCodingProblem/157_Amazon_Find_If_String_Can_Be _Made_Palindrome.py)
 - [Daily Coding problem # 158](DailyCodingProblem/158_Slack_Number_oF_Ways_To_Walk_Down_a_Matrix.py)
 - [Daily Coding problem # 159](DailyCodingProblem/159_Google_Return_First_Recurring_Char.py)
+- [Daily Coding problem # 160](DailyCodingProblem/160_Uber_Compute_Longest_Path_of_Weighted_Tree.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
