@@ -19,9 +19,9 @@ The path does not have to pass through the root, and each node can have any amou
 """
 
 # There are two case to take care of here:
-#  1. either the longest path is a in a straight ward trajectory down from a node or
-#  2. its a round trajectory where the path first goes up the nodes and then down i.e.
-#     combo of two of the longest straight paths from a node
+#  1. either the longest path is a in a straight ward trajectory downwards that starts from a node or
+#  2. its a round trajectory where the path first goes up the nodes and then down i.e. combo of two of the
+#     longest straight paths from a node
 #
 #  We keep track of the max_path_seen_so_far which can either be straight or a combo
 #  and propagate it up the tree as we recursively look at each node
