@@ -18,20 +18,13 @@ the longest path would be c -> a -> d -> f, with a length of 17.
 The path does not have to pass through the root, and each node can have any amount of children.
 """
 
-# use adjacency matrix to solve this
-#       a   b   c   d   e   f   g   h
-#    ----------------------------------
-#  a |  -   3   5   8   -   -   -   -
-#  b |  3   -   -   -   -   -   -   -
-#  c |  5   -   -   -   -   -   -   -
-#  d |  8   -   -   -   2   4   -   -
-#  e |  -   -   -   2   -   -   1   1
-#  f |  -   -   -   4   -   -   -   -
-#  g |  -   -   -   -   1   -   -   -
-#  h |  -   -   -   -   1   -   -   -
+# There are two case to take care of here:
+#  1. either the longest path is a in a straight ward trajectory down from a node or
+#  2. its a round trajectory where the path first goes up the nodes and then down i.e.
+#     combo of two of the longest straight paths from a node
 #
-# Start with a row(node) and find the longest path through that node and save it
-# build all other paths by building on other paths
+#  We keep track of the max_path_seen_so_far which can either be straight or a combo
+#  and propagate it up the tree as we recursively look at each node
 #
 
 class Node:
@@ -42,27 +35,30 @@ class Node:
     def __repr__(self):
         return "{}->{}".format(self.val, self.children)
 
+def get_longest_path(tree):
+    _, longest_path_in_tree = get_longest_length_and_path(root=tree)
+    return longest_path_in_tree
 
-
-def longest_path(root):
-    height, path = longest_height_and_path(root)
-    return path
-
-def longest_height_and_path(root):
-    longest_path_so_far = float("-inf")
-    highest, second_highest = 0, 0
+def get_longest_length_and_path(root):
+    max_path_seen_so_far = float("-inf")
+    longest, second_longest = 0, 0  # stores longest and and second longest straight paths from this root
 
     for length, child in root.children:
-        height, longest_path_length = longest_height_and_path(child)
 
-        longest_path_so_far = max(longest_path_so_far, longest_path_length)
+        # get the max longest path that goes through this child and
+        # longest_straight_path that goes through this child
+        longest_straight_path, max_path_length = get_longest_length_and_path(child)
 
-        if height + length > highest:
-            highest, second_highest = height + length, highest
-        elif height + length > second_highest:
-            second_highest = height + length
+        max_path_seen_so_far = max(max_path_seen_so_far, max_path_length)
 
-    return highest, max(longest_path_so_far, highest + second_highest)
+        if longest_straight_path + length > longest:
+            longest, second_longest = longest_straight_path + length, longest
+        elif longest_straight_path + length > second_longest:
+            second_longest = longest_straight_path + length
+
+    return longest, max(max_path_seen_so_far, longest+second_longest)
+
+
 
 if __name__ == '__main__':
     a = Node('a')
@@ -81,34 +77,7 @@ if __name__ == '__main__':
 
     print(a)
 
-    print(longest_path(a))
+    print(get_longest_path(a))
+    print(get_longest_path(d))
 
 
-
-# # Multi-Child Weighted Tree
-# class Node:
-#     def __init__(self, val, children : list = None, weights : list = None):
-#         self.node = val
-#         self.children = children
-#         self.weights = weights
-#
-#     def __repr__(self):
-#         return "{}->({}, {})".format(self.node, self.children, self.weights)
-#
-#
-#
-#
-#
-# def longest_path(tree):
-#     # create adjacency mat
-#     pass
-#
-#
-# if __name__ == '__main__':
-#     tree = Node(val='a', children=[Node('b'),
-#                                    Node('c'),
-#                                    Node('d', children=[Node('e', children=[Node('g'), Node('h')], weights=[1, 1]),
-#                                                        Node('f')], weights=[2, 4])
-#                                    ], weights=[3, 5, 8])
-#
-#     print(tree)
