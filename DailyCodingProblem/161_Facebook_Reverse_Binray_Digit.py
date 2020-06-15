@@ -38,10 +38,23 @@ def reverse_bits(number):
     return res
 
 
+# simpler solution if the result of AND of number and 1 is == 1
+# add 1 to result else 0
+def reverse_bits_redux(number):
+    result = 0
 
+    while number:
+        result = result << 1
+
+        if number & 1 == 1:
+            result = result | 1
+
+        number = number >> 1
+
+    return result
 
 if __name__ == '__main__':
 
-    assert reverse_bits(int("11110000111100001111000011110000", 2)) == int("00001111000011110000111100001111", 2)
+    assert reverse_bits_redux(int("11110000111100001111000011110000", 2)) == int("00001111000011110000111100001111", 2)
 
-    assert reverse_bits(int("110001", 2)) == int("100011", 2)
+    assert reverse_bits_redux(int("110001", 2)) == int("100011", 2)
