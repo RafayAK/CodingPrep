@@ -18,22 +18,16 @@ return
 def reverse_bits(number):
     res = 0  # This variable stores the result from reversed bits
 
-    number_of_bits = 32
-
-    re_bits = bin(res)
-    num_bits = bin(number)
     while number > 0:
         res = res << 1
-        re_bits = bin(res)
+        # re_bits = bin(res)
 
         res = res | (number & 1)
-        re_bits = bin(res)
-        num_bits = bin(number)
+        # re_bits = bin(res)
+        # num_bits = bin(number)
 
         number = number >> 1
-        num_bits = bin(number)
-
-        number_of_bits -= 1
+        # num_bits = bin(number)
 
     return res
 
@@ -54,6 +48,10 @@ def reverse_bits_redux(number):
     return result
 
 if __name__ == '__main__':
+
+    assert reverse_bits(int("11110000111100001111000011110000", 2)) == int("00001111000011110000111100001111", 2)
+
+    assert reverse_bits(int("110001", 2)) == int("100011", 2)
 
     assert reverse_bits_redux(int("11110000111100001111000011110000", 2)) == int("00001111000011110000111100001111", 2)
 
