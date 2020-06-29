@@ -175,6 +175,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 161](DailyCodingProblem/161_Facebook_Reverse_Binray_Digit.py)
 - [Daily Coding problem # 162](DailyCodingProblem/162_Square_Shortest_Unique_Prefix.py)
 - [Daily Coding problem # 163](DailyCodingProblem/163_JaneStreet_Evaluate_Reverse_Polish_Notation.py)
+- [Daily Coding problem # 164](DailyCodingProblem/164_Google_Find_Duplicate_Pigeonhole_Principal.py)
 
 ## HackerRank
 - [2D Array - DS](2D_Array_HourGlassSum.py) - *Full question can be found [here](https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)*
