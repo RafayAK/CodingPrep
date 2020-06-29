@@ -21,7 +21,7 @@ def get_duplicate(arr):
 # result will be the number that is duplicate
 def get_duplicate_redux(arr):
     n = len(arr) - 1  # -1 because the elements in the array would 1 greater due to duplicate
-    print(n)
+    # print(n)
     return sum(arr) - (n * (n+1))//2
 
 
