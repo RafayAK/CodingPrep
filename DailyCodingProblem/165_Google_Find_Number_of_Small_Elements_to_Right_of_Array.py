@@ -13,7 +13,7 @@ There is 1 smaller element to the right of 6
 There are no smaller elements to the right of 1
 
 """
-
+# O(n^2) implementation
 def count_smaller_on_right(arr:list):
     new_arr = []
 
@@ -28,9 +28,38 @@ def count_smaller_on_right(arr:list):
 
     return new_arr
 
+import bisect
+# the bisect algo runs in O(log(n)) time and is similar to binary search
+# the bisect.bisect_left() function returns the index from the left where a given
+# element could be inserted, such that the point of insertion results in two halves
+# one that is arr_values < x and the other x <= arr_values
+
+# idea: the start from the right most elements and find the index where they would fit
+# in a sorted list the index will represent the number of elements smaller to the right
+# of the element
+
+# total runtime of redux algo O(nLog(n))
+def count_smaller_on_right_redux(arr:list):
+    result = []
+
+    sorted_list = []
+    for val in reversed(arr):
+        index = bisect.bisect_left(sorted_list, val)
+        result.append(index)
+        sorted_list.insert(index, val)
+
+    result.reverse()
+    return result
+
+
 if __name__ == '__main__':
+
     print(count_smaller_on_right([3, 4, 9, 6, 1]))
-    print(count_smaller_on_right([3, 2, 4, 9, 6, 1, 0]))
+    print(count_smaller_on_right([3, 2, 4, 9, 6, 1, 0, 9]))
+    print(count_smaller_on_right([3, 4, 0, 1, 6, 9]))
+    print("\n\n")
+    print(count_smaller_on_right_redux([3, 4, 0, 1, 6, 9]))
+    print(count_smaller_on_right_redux([3, 2, 4, 9, 6, 1, 0, 9]))
 
 
 
