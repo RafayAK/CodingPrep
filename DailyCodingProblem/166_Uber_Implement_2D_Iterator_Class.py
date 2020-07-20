@@ -90,4 +90,4 @@ if __name__ == '__main__':
     while test.has_next():
         print(test.next())
 
-
+    print(test.next())  # should raise exception
