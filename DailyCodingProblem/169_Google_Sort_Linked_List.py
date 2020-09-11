@@ -14,21 +14,50 @@ class Node:
     def __repr__(self):
         return "{}->{}".format(self.data, self.nxt)
 
-# unoptimized bubble sort O(N^2) constant space
-def sort_ll_bubble(head):
-    next_node = head.nxt
-    prev_node = head
+class LinkedList:
+    def __init__(self):
+        self.head = None
 
-    while prev_node and next_node:
-        if prev_node.data > next_node.data:
-            # swap
-            prev_node.nxt = next_node.nxt
-            next_node.nxt = prev_node
+    def create_linked_list(self, l:list):
+        if self.head is None:
+            self.head = Node(data=l[0])
+            l = l[1:]
+
+        curr_node = self.head
+        while l:
+            curr_node.nxt = Node(data=l[0])
+            curr_node = curr_node.nxt
+            l = l[1:]
+
+    # unoptimized bubble sort O(N^2) constant space
+    def sort_ll_bubble(self):
+        made_swap = True
+
+        while made_swap:
+            curr_node = self.head
+            next_node = curr_node.nxt
+            made_swap = False
+
+            while next_node:
+                if curr_node.data > next_node.data:
+                    curr_node.data, next_node.data = next_node.data, curr_node.data
+                    made_swap = True
+                curr_node = next_node
+                next_node = next_node.nxt
+
+
+    def __repr__(self):
+        return "H->{}".format(self.head)
+
+
+
+
 
 
 
 if __name__ == '__main__':
-    ll = Node(4, nxt=Node(1, nxt=Node(-3, nxt=Node(99))))
-    print(ll)
-    sort_ll_bubble(ll)
-    print(ll)
+  ll = LinkedList()
+  ll.create_linked_list([4, 1, -3, 99])
+  print(ll)
+  ll.sort_ll_bubble()
+  print(ll)
