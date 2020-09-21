@@ -30,7 +30,8 @@ class LinkedList:
             l = l[1:]
 
     # unoptimized bubble sort O(N^2) constant space
-    def sort_ll_bubble(self):
+    # changes data among nodes
+    def sort_bubble_dataxchnage(self):
         made_swap = True
 
         while made_swap:
@@ -44,6 +45,32 @@ class LinkedList:
                     made_swap = True
                 curr_node = next_node
                 next_node = next_node.nxt
+
+    def sort_bubble_linkxchnage(self):
+        made_swap = True
+
+        while made_swap:
+            curr_node = self.head
+            next_node = curr_node.nxt
+            prev_node = None
+            made_swap = False
+
+            while next_node:
+                if curr_node.data > next_node.data:
+                    curr_node.nxt = next_node.nxt
+                    next_node.nxt = curr_node
+                    if prev_node is not None:
+                        prev_node.nxt = next_node
+                    else:
+                        self.head = next_node
+
+                    curr_node, next_node = next_node, curr_node
+                    made_swap=True
+
+                prev_node = curr_node
+                curr_node = next_node
+                next_node = next_node.nxt
+
 
 
     def __repr__(self):
@@ -59,5 +86,6 @@ if __name__ == '__main__':
   ll = LinkedList()
   ll.create_linked_list([4, 1, -3, 99])
   print(ll)
-  ll.sort_ll_bubble()
+  # ll.sort_bubble_dataxchnage()
+  ll.sort_bubble_linkxchnage()
   print(ll)
