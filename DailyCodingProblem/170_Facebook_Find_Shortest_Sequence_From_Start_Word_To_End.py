@@ -43,6 +43,29 @@ def transform_sequence(start:str, end:str, dictionary:set):
     return sequence if start is end else None
 
 
+# better solution more robust solotion in O(n^2). Using breadth first traversal
+from collections import deque
+def transform_sequence_redux(start:str, end:str, dictionary:set):
+    graph = deque()
+    alphabets = 'abcdefghijklmnopqrstuvwxyz'
+    graph.append((start, [start]))
+
+    while graph:
+        curr_word, path = graph.popleft()
+        if curr_word == end:
+            return path
+
+        for i in range(len(curr_word)):
+            for alpha in alphabets:
+                new_word = curr_word[: i] + alpha + curr_word[i+1:]
+                if new_word in dictionary:
+                    dictionary.remove(new_word)
+                    graph.append((new_word, path+[new_word]))
+
+    return None
+
+
 if __name__ == '__main__':
-    print(transform_sequence("dog", "cat", {"dog", "dot", "dat", "cat"}))
-    print(transform_sequence("dog", "cat", {"tod", "dot", "dat", "dar"}))
+    # print(transform_sequence("dog", "cat", {"dot", "dop", "dat", "cat"}))
+    print(transform_sequence_redux("dog", "cat", {"dot", "tod", "dat", "dar"}))
+    print(transform_sequence_redux("dog", "cat", {"dot", "dbg","dop", "dat", "cat"}))
