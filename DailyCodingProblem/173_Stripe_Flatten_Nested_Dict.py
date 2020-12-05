@@ -36,8 +36,8 @@ def flatten_dict(dictionary:dict):
     flat_dict = {}
 
     def helper(basekey, values):
-        if get_keys(values):
-            # if keys return successfully that means "values" to this "key" were a dict
+        if isinstance(values, dict):
+            # that means "values" to this "key" were a dict
             for k in get_keys(values):
                 helper(add_to_basekey(basekey, k), values[k])
         else:
@@ -51,7 +51,7 @@ def flatten_dict(dictionary:dict):
 
 
 if __name__ == '__main__':
-    print(add_to_basekey("hello", "world"))
+
     d = {
     "key": 3,
     "foo": {
