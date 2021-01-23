@@ -8,6 +8,7 @@ For example, given the input string racecarannakayak, return ["racecar", "anna",
 Given the input string abc, return ["a", "b", "c"].
 """
 
+
 # The max number of palindromes can  would be the length of the
 # string itself if no palindromes are found
 # Min palindrome can be 1 if th string itself is a palindrome.
@@ -18,20 +19,19 @@ Given the input string abc, return ["a", "b", "c"].
 def return_min_palindromes(s):
     palindromes = []
 
-    is_palindrome = lambda x : x == x[::-1]
-    def helper(string, end=2):
+    is_palindrome = lambda x: x == x[::-1]
 
-        if end > len(string):
-            for letter in string:
-                palindromes.append(letter)
+    def helper(string, left_over=""):
+
+        if len(string) == 0:
             return
 
-        if is_palindrome(string[:end]):
-            palindromes.append(string[:end])
-            string = string[end:]
-            helper(string, end=2)
+        if is_palindrome(string):
+            palindromes.append(string)
+            helper(left_over, "")
         else:
-            helper(string, end+1)
+           helper(string[:-1], string[-1] + left_over)
+
 
     helper(s)
     return palindromes
@@ -41,4 +41,4 @@ if __name__ == '__main__':
     print(return_min_palindromes('abc'))
     print(return_min_palindromes('racecarannakayak'))
     print(return_min_palindromes('abaana'))
-    print(return_min_palindromes('abaaba'))  # TODO: FAILS on this
+    print(return_min_palindromes('abaaba'))
