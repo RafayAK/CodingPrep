@@ -9,7 +9,7 @@ You can choose to represent the graph as either an adjacency matrix or adjacency
 """
 
 # idea : whenever a loop of paths forms the graph is not minimally connected.
-
+# this is depth first search
 def is_minimally_connected(adj_list:dict):
 
     def helper(curr_node, next_paths, visited_paths):
@@ -28,7 +28,36 @@ def is_minimally_connected(adj_list:dict):
     return helper(keys[0], adj_list[keys[0]], [])
 
 
+# simpler approach see that in a minimally connected tree there can only be
+# n - 1 edges. Eg:
+# if number of nodes n = 1 the e = 0
+# if number of nodes n = 2 the e = 1
+# if number of nodes n = 3 the e = 2
+
+def is_minimally_connected_redux(adj_list:dict):
+    number_of_nodes = len(adj_list)
+    number_edges = 0
+    visited_nodes = set()
+    for node, paths in adj_list.items():
+        visited_nodes.add(node)
+        for next_nodes in paths:
+            if next_nodes not in visited_nodes:
+                number_edges += 1
+
+
+    return number_of_nodes - 1 == number_edges
+
+
 if __name__ == '__main__':
+
+    """
+                 a 
+                / \
+               b   c
+                \ / \
+                 d - e 
+    """
+
     graph_1 = {
         'a': ['b', 'c'],
         'b': ['a', 'd'],
@@ -38,6 +67,14 @@ if __name__ == '__main__':
     }
 
     print(is_minimally_connected(graph_1))
+    print(is_minimally_connected_redux(graph_1))
+    """
+                a
+               / \
+              b   c
+                 / \
+                d   e
+    """
 
     graph_1 = {
         'a': ['b', 'c'],
@@ -48,6 +85,14 @@ if __name__ == '__main__':
     }
 
     print(is_minimally_connected(graph_1))
+    print(is_minimally_connected_redux(graph_1))
+    """
+                    a
+                   / \
+                  b   c
+                     / \
+                    d - e
+    """
 
     graph_1 = {
         'a': ['b', 'c'],
@@ -58,3 +103,4 @@ if __name__ == '__main__':
     }
 
     print(is_minimally_connected(graph_1))
+    print(is_minimally_connected_redux(graph_1))
