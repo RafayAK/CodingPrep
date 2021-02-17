@@ -56,3 +56,4 @@ if __name__ == '__main__':
     # Correct Ans: 0
     # 16 13 13 3
     # 14 12 10 9
+    # https://stackoverflow.com/questions/6597180/how-to-divide-a-set-into-two-subsets-such-that-difference-between-the-sum-of-num
