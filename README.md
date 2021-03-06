@@ -199,6 +199,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 185](DailyCodingProblem/185_Google_Return_Intersection_Area_of_Two_Rectangles.py)
 - [Daily Coding problem # 186](DailyCodingProblem/186_Microsoft_Find_Two_Subsets_With_Least_Difference.py)
 - [Daily Coding problem # 187](DailyCodingProblem/187_Google_Find_If_Rectangles_Overlap.py)
+- [Daily Coding problem # 188](DailyCodingProblem/188_Google_Function_Explanation.py)
 
 
 ## HackerRank
