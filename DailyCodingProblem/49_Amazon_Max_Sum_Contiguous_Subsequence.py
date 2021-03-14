@@ -38,7 +38,7 @@ def find_max_sum_optimized(arr):
     overall_max_sum = arr[0]
 
     for num in arr[1:]:
-        curr_max_sum = max(curr_max_sum, curr_max_sum+num)
+        curr_max_sum = max(num, curr_max_sum+num)
         overall_max_sum = max(curr_max_sum, overall_max_sum)
 
     return overall_max_sum
