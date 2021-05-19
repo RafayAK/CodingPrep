@@ -27,5 +27,5 @@ def non_overlapping_intervals(intervals):
 
 
 if __name__ == "__main__":
-    print(non_overlapping_intervals([(1,2),(0,1)]))
-    print(non_overlapping_intervals([(7, 9), (2, 4), (5, 8)]))
+    assert non_overlapping_intervals([(1,2),(0,1)]) == 0
+    assert non_overlapping_intervals([(7, 9), (2, 4), (5, 8)]) == 1
