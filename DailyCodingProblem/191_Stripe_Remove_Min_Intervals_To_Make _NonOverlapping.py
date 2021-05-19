@@ -13,35 +13,19 @@ The intervals are not necessarily sorted in any order.
 """
 
 
-def generate_time_periods(interval):
-    return [i for i in range(*interval)]
+def non_overlapping_intervals(intervals):
+    current_end = float("-inf")
+    overlapping = 0
 
+    for start, end in sorted(intervals, key=lambda i: i[1]):
+        if start >= current_end:
+            current_end = end
+        else:
+            overlapping += 1
 
-def min_intervals_removed(intervals:list):
-    # generate time periods that the intervals occupy
-    list_of_time_periods = []
-    for i in intervals:
-        list_of_time_periods.append(generate_time_periods(i))
-
-    # find the min number of intervals that can be removed
-    num_intervals = len(list_of_time_periods)
-    min_removed = num_intervals
-    for j in range(num_intervals, 0, -1):
-        flattened = []
-        list(flattened.extend(x) for x in list_of_time_periods[0:j])
-        set_of_intervals = set(tuple(flattened))
-        if len(set_of_intervals) == sum([len(x) for x in list_of_time_periods[0:j]]):
-            removed = num_intervals - j
-            if removed < min_removed:
-                min_removed = removed
-
-    return min_removed
-
-
-
+    return overlapping
 
 
 if __name__ == "__main__":
-    intervals = [(7, 9), (2, 4), (5, 8)]
-    print(min_intervals_removed(intervals))
-    print(min_intervals_removed([(1,2),(0,1)]))
+    print(non_overlapping_intervals([(1,2),(0,1)]))
+    print(non_overlapping_intervals([(7, 9), (2, 4), (5, 8)]))
