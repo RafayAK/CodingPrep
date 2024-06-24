@@ -246,4 +246,5 @@ Pull requests are welcome, if you want to improve my implementation
 
 
 ## LeetCode
-[Largest Numbers](largest_number.py) - *Full question can be found [here](https://leetcode.com/problems/largest-number)*
+- [Largest Numbers](largest_number.py) - *Full question can be found [here](https://leetcode.com/problems/largest-number)*
+- [Jump Game](HackerRank/Jump_Game.py) - *Full question can be found [here](https://leetcode.com/problems/jump-game/description/)*
