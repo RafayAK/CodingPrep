@@ -204,6 +204,7 @@ Pull requests are welcome, if you want to improve my implementation
 - [Daily Coding problem # 190](DailyCodingProblem/190_Facebook_Max_Sum_Of_Subarray_In_Circular_Array.py)
 - [Daily Coding problem # 191](DailyCodingProblem/191_Stripe_Remove_Min_Intervals_To_Make_NonOverlapping.py)
 - [Daily Coding problem # 192](DailyCodingProblem/192_Google_Reach_end_of_array.py)
+- [Daily Coding problem # 192](DailyCodingProblem/193_Affirm_Max_Profit.py)
 
 
 ## HackerRank
