@@ -39,9 +39,10 @@ def get_square_root_redux_redux(num, learning_rate=0.0001, epochs=5000):
     # a little ML ;)
 
     guess = 1
-    Loss_function = lambda a: (1/2) * (a-num)**2
-    dLoss = lambda a: a*(a-num)
-
+    # Loss_function = lambda a: (1/2) * (a-num)**2
+    # dLoss = lambda a: a*(a-num)
+    Loss_function = lambda a: (1/2) * (num - a)**2
+    dLoss = lambda a: -(num - a)
     for i in range(epochs):
         if i % 1000==0 or i==epochs-1:
             print(">>>>> Loss: {}".format(Loss_function(guess**2)))
