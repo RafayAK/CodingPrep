@@ -39,6 +39,25 @@ class HeapStack:
         return heappop(self.heap)[1]
 
 
+class HeapStackRedux:
+    """
+    Rewritten improvement now no longer needs an actual timestamp, just
+    an ever-increasing counter to do the same
+    """
+    def __init__(self):
+        self.max_heap = []
+        self._t = 0
+
+    def push(self, value: int) -> None:
+        self._t += 1
+        heappush(self.max_heap, (-self._t, value))
+
+    def pop(self) -> int:
+        if not self.max_heap:
+            raise IndexError("Stack is empty")
+        return heappop(self.max_heap)[1]
+
+
 
 if __name__ == '__main__':
     my_stack = HeapStack()
@@ -49,3 +68,16 @@ if __name__ == '__main__':
     # remove items from heap
     for num in [5, 4, 3, 1, 2][::-1]:
         assert num == my_stack.pop()
+
+
+    # ----
+    
+    my_stack = HeapStackRedux()
+    # add items to stack
+    for num in [5, 4, 3, 1, 2]:
+        my_stack.push(num)
+
+    # remove items from heap
+    for num in [5, 4, 3, 1, 2][::-1]:
+        temp = my_stack.pop()
+        assert num == temp
