@@ -21,8 +21,64 @@ class autocomplete:
             else:
                 self._wordDict[word[:i+1]] = [word]
     def query(self,word):
-        if word in self._wordDict:
-            return self._wordDict[word]
+        return self._wordDict.get("de")
+
+
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_end = False
+        self.word = None
+
+
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def insert(self, word: str) -> None:
+        node = self.root
+        for character in word:
+            if character not in node.children:
+                node.children[character] = TrieNode()
+            node = node.children[character]
+        node.is_end = True
+        node.word = word
+
+    def _collect_words(self, node: TrieNode, result: list[str]):
+        if node.is_end:
+            result.append(node.word)
+
+        for child in node.children.values():
+            self._collect_words(child, result)
+
+
+    def search_prefix(self, prefix: str) -> list[str]:
+        node = self.root
+        for character in prefix:
+            node = node.children[character]
+
+        result = []
+        self._collect_words(node, result)
+        return result
+
+
+
+
+def get_autocomplete(s: str, a: list[str]) -> list[str]:
+    """Auto complete function
+    Args:
+        s (str): query string
+        a (list[str]): all possible query strings
+
+    Returns:
+        list[str]: set of all possible query strings
+    """
+
+    trie = Trie()
+    for word in a:
+        trie.insert(word)
+    return trie.search_prefix(s)
 
 
 if __name__ == '__main__':
@@ -33,3 +89,6 @@ if __name__ == '__main__':
 
     res = auto.query('de')
     print(res)
+
+
+    print(get_autocomplete("de", ["dog", "deer", "deal"]))
